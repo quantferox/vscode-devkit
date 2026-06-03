@@ -15,6 +15,7 @@
 	//<================>WORKBENCH<================>
 	"workbench.activityBar.compact": true,
 	"workbench.activityBar.location": "top",
+	"workbench.browser.openLocalhostLinks": false,
 	"workbench.colorTheme": "Bearded Theme Black & Gold",
 	"workbench.commandPalette.showAskInChat": false,
 	"workbench.editor.editorActionsLocation": "titleBar",
@@ -30,7 +31,6 @@
 	"workbench.panel.showLabels": false,
 	"workbench.productIconTheme": "Default",
 	"workbench.remoteIndicator.showExtensionRecommendations": false,
-	"workbench.sash.hoverDelay": 200,
 	"workbench.sash.size": 2,
 	"workbench.secondarySideBar.showLabels": false,
 	"workbench.startupEditor": "none",
@@ -40,174 +40,108 @@
 	"workbench.view.alwaysShowHeaderActions": true,
 	"workbench.welcomePage.experimentalOnboarding": false,
 	"workbench.welcomePage.walkthroughs.openOnInstall": false,
+	//<================>FILES<================>
+	"files.associations": {
+		"*.embeddedhtml": "html",
+		".env*": "dotenv"
+	},
+	"files.autoGuessEncoding": false,
+	"files.autoSave": "off",
+	"files.autoSaveDelay": 1000,
+	"files.autoSaveWhenNoErrors": false,
+	"files.autoSaveWorkspaceFilesOnly": false,
+	"files.candidateGuessEncodings": [],
+	"files.defaultLanguage": "",
+	"files.dialog.defaultPath": "",
+	"files.enableTrash": true,
+	"files.encoding": "utf8",
+	"files.eol": "auto",
+	"files.exclude": {},
+	"files.hotExit": "onExit",
+	"files.insertFinalNewline": false,
+	"files.participants.timeout": 60000,
+	"files.readonlyExclude": {},
+	"files.readonlyFromPermissions": false,
+	"files.readonlyInclude": {},
+	"files.restoreUndoStack": true,
+	"files.saveConflictResolution": "askUser",
+	"files.simpleDialog.enable": false,
+	"files.trimFinalNewlines": false,
+	"files.trimTrailingWhitespace": false,
+	"files.trimTrailingWhitespaceInRegexAndStrings": true,
+	"files.watcherExclude": {},
+	"files.watcherInclude": [],
+	"files.refactoring.autoSave": true,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//<================>EDITOR<================>
-	
-	"editor.autoClosingBrackets": "languageDefined",
-	"editor.autoClosingComments": "languageDefined",
-	"editor.autoClosingDelete": "auto",
-	"editor.autoIndentOnPaste": false,
+	"explorer.autoOpenDroppedFile": true,
+	"explorer.autoReveal": true,
+	"explorer.autoRevealExclude": {},
+	"explorer.compactFolders": true,
+	"explorer.confirmDelete": true,
+	"explorer.confirmDragAndDrop": true,
+	"explorer.confirmPasteNative": true,
+	"explorer.confirmUndo": "default",
+	"explorer.copyPathSeparator": "auto",
+	"explorer.copyRelativePathSeparator": "auto",
+	"explorer.decorations.badges": true,
+	"explorer.decorations.colors": true,
+	"explorer.enableDragAndDrop": true,
+	"explorer.enableUndo": true,
+	"explorer.excludeGitIgnore": false,
+	"explorer.expandSingleFolderWorkspaces": true,
+	"explorer.fileNesting.enabled": false,
+	"explorer.fileNesting.expand": true,
+	"explorer.fileNesting.patterns": {},
+	"explorer.incrementalNaming": "simple",
+	"explorer.openEditors.minVisible": 0,
+	"explorer.openEditors.sortOrder": "editorOrder",
+	"explorer.openEditors.visible": 9,
+	"explorer.sortOrder": "default",
+	"explorer.sortOrderLexicographicOptions": "default",
+	"explorer.sortOrderReverse": false,
+	//<================>EDITOR<================>
+	"accessibility.signals.terminalBell": {
+		"sound": "off"
+	},
+	//<================>EDITOR<================>
 	"editor.cursorBlinking": "phase",
-	"editor.cursorHeight": 100,
 	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.cursorStyle": "line",
-	"editor.cursorSurroundingLines": 0,
-	"editor.cursorSurroundingLinesStyle": "default",
-	"editor.cursorWidth": 3,
-	"editor.bracketPairColorization.enabled": true,
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
-	"editor.codeActionsOnSave": {},
-	"editor.codeLensFontFamily": "",
-	"editor.codeLensFontSize": 0,
+	"editor.codeLensFontFamily": "Fira Code",
 	"editor.colorDecorators": true,
-	"editor.colorDecoratorsActivatedOn": "clickAndHover",
-	"editor.colorDecoratorsLimit": 500,
-	"editor.defaultColorDecorators": "auto",
+	"editor.colorDecoratorsActivatedOn": "click",
 	"editor.defaultFormatter": null,
-
-
-	
-
-
-	
-	// Controls whether the editor should allow moving selections via drag and drop.
-	"editor.dragAndDrop": true,
-	// Controls whether you can drag and drop a file into a text editor by holding down the `Shift` key (instead of opening the file in an editor).
+	"editor.dragAndDrop": false,
 	"editor.dropIntoEditor.enabled": true,
-	// Configures the preferred type of edit to use when dropping content.
-	// 
-	// This is an ordered list of edit kinds. The first available edit of a preferred kind will be used.
-	"editor.dropIntoEditor.preferences": [],
-	// Controls if a widget is shown when dropping files into the editor. This widget lets you control how the file is dropped.
-	//  - afterDrop: Show the drop selector widget after a file is dropped into the editor.
-	//  - never: Never show the drop selector widget. Instead the default drop provider is always used.
-	"editor.dropIntoEditor.showDropSelector": "afterDrop",
-	// Sets whether the EditContext API should be used instead of the text area to power input in the editor.
-	"editor.editContext": true,
-	// Controls whether copying without a selection copies the current line.
-	"editor.emptySelectionClipboard": true,
-	// Controls whether the tokenization should happen asynchronously on a web worker.
-	"editor.experimental.asyncTokenization": true,
-	// Controls whether async tokenization should be logged. For debugging only.
-	"editor.experimental.asyncTokenizationLogging": false,
-	// Controls whether async tokenization should be verified against legacy background tokenization. Might slow down tokenization. For debugging only.
-	"editor.experimental.asyncTokenizationVerification": false,
-	// Controls whether tree sitter parsing should be turned on for css. This will take precedence over `editor.experimental.treeSitterTelemetry` for css.
-	"editor.experimental.preferTreeSitter.css": false,
-	// Controls whether tree sitter parsing should be turned on for ini. This will take precedence over `editor.experimental.treeSitterTelemetry` for ini.
-	"editor.experimental.preferTreeSitter.ini": false,
-	// Controls whether tree sitter parsing should be turned on for regex. This will take precedence over `editor.experimental.treeSitterTelemetry` for regex.
-	"editor.experimental.preferTreeSitter.regex": false,
-	// Controls whether tree sitter parsing should be turned on for typescript. This will take precedence over `editor.experimental.treeSitterTelemetry` for typescript.
-	"editor.experimental.preferTreeSitter.typescript": false,
-	// Controls whether tree sitter parsing should be turned on and telemetry collected. Setting `editor.experimental.preferTreeSitter` for specific languages will take precedence.
-	"editor.experimental.treeSitterTelemetry": false,
-	// Controls whether to use the experimental GPU acceleration to render the editor.
-	//  - off: Use regular DOM-based rendering.
-	//  - on: Use GPU acceleration.
-	"editor.experimentalGpuAcceleration": "off",
-	// Controls whether whitespace is rendered with a new, experimental method.
-	//  - svg: Use a new rendering method with svgs.
-	//  - font: Use a new rendering method with font characters.
-	//  - off: Use the stable rendering method.
-	"editor.experimentalWhitespaceRendering": "svg",
-	// Scrolling speed multiplier when pressing `Alt`.
-	"editor.fastScrollSensitivity": 5,
-	// Controls whether the Find Widget should add extra lines on top of the editor. When true, you can scroll beyond the first line when the Find Widget is visible.
-	"editor.find.addExtraSpaceOnTop": true,
-	// Controls the condition for turning on Find in Selection automatically.
-	//  - never: Never turn on Find in Selection automatically (default).
-	//  - always: Always turn on Find in Selection automatically.
-	//  - multiline: Turn on Find in Selection automatically when multiple lines of content are selected.
-	"editor.find.autoFindInSelection": "never",
-	// Controls whether the Find Widget closes after an explicit find navigation command lands on a result.
-	"editor.find.closeOnResult": false,
-	// Controls whether the cursor should jump to find matches while typing.
-	"editor.find.cursorMoveOnType": true,
-	// Controls whether the Find Widget should search as you type.
-	"editor.find.findOnType": true,
-	// Controls how the find widget history should be stored
-	//  - never: Do not store search history from the find widget.
-	//  - workspace: Store search history across the active workspace
-	"editor.find.history": "workspace",
-	// Controls whether the search automatically restarts from the beginning (or the end) when no further matches can be found.
-	"editor.find.loop": true,
-	// Controls how the replace widget history should be stored
-	//  - never: Do not store history from the replace widget.
-	//  - workspace: Store replace history across the active workspace
-	"editor.find.replaceHistory": "workspace",
-	// Controls whether the search string in the Find Widget is seeded from the editor selection.
-	//  - never: Never seed search string from the editor selection.
-	//  - always: Always seed search string from the editor selection, including word at cursor position.
-	//  - selection: Only seed search string from the editor selection.
-	"editor.find.seedSearchStringFromSelection": "always",
-	// Controls whether the editor has code folding enabled.
-	"editor.folding": true,
-	// Controls whether the editor should highlight folded ranges.
-	"editor.foldingHighlight": true,
-	// Controls whether the editor automatically collapses import ranges.
-	"editor.foldingImportsByDefault": false,
-	// The maximum number of foldable regions. Increasing this value may result in the editor becoming less responsive when the current source has a large number of foldable regions.
-	"editor.foldingMaximumRegions": 5000,
-	// Controls the strategy for computing folding ranges.
-	//  - auto: Use a language-specific folding strategy if available, else the indentation-based one.
-	//  - indentation: Use the indentation-based folding strategy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	"editor.foldingStrategy": "auto",
-
-
-
-
-
-
-
-
-
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 12,
-
-
-
-
-
-
-
-
-
-
-
-
-	// Configures font variations. Can be either a boolean to enable/disable the translation from font-weight to font-variation-settings or a string for the value of the CSS 'font-variation-settings' property.
-	"editor.fontVariations": false,
-	// Controls the font weight. Accepts "normal" and "bold" keywords or numbers between 1 and 1000.
 	"editor.fontWeight": "normal",
-	// Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
-	"editor.formatOnPaste": false,
 	"editor.formatOnSave": true,
-	// Controls if format on save formats the whole file or only modifications. Only applies when `editor.formatOnSave` is enabled.
-	//  - file: Format the whole file.
-	//  - modifications: Format modifications. Requires source control and a formatter that supports 'Format Selection'.
-	//  - modificationsIfAvailable: Will attempt to format modifications only (requires source control and a formatter that supports 'Format Selection'). If source control can't be used, then the whole file will be formatted.
-	"editor.formatOnSaveMode": "file",
-	// Controls whether the editor should automatically format the line after typing.
-	"editor.formatOnType": false,
-	"editor.glyphMargin": false,
+
+
+
+
+	"editor.glyphMargin": false, //*
+
+
+
+
 	// Alternative command id that is being executed when the result of 'Go to Declaration' is the current location.
 	"editor.gotoLocation.alternativeDeclarationCommand": "editor.action.goToReferences",
 	// Alternative command id that is being executed when the result of 'Go to Definition' is the current location.
@@ -246,75 +180,27 @@
 	//  - gotoAndPeek: Go to the primary result and show a Peek view
 	//  - goto: Go to the primary result and enable Peek-less navigation to others
 	"editor.gotoLocation.multipleTypeDefinitions": "peek",
-	// Controls whether bracket pair guides are enabled or not.
-	//  - true: Enables bracket pair guides.
-	//  - active: Enables bracket pair guides only for the active bracket pair.
-	//  - false: Disables bracket pair guides.
-	"editor.guides.bracketPairs": false,
-	// Controls whether horizontal bracket pair guides are enabled or not.
-	//  - true: Enables horizontal guides as addition to vertical bracket pair guides.
-	//  - active: Enables horizontal guides only for the active bracket pair.
-	//  - false: Disables horizontal bracket pair guides.
-	"editor.guides.bracketPairsHorizontal": "active",
-	// Controls whether the editor should highlight the active bracket pair.
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairsHorizontal": true,
 	"editor.guides.highlightActiveBracketPair": true,
-	// Controls whether the editor should highlight the active indent guide.
-	//  - true: Highlights the active indent guide.
-	//  - always: Highlights the active indent guide even if bracket guides are highlighted.
-	//  - false: Do not highlight the active indent guide.
 	"editor.guides.highlightActiveIndentation": true,
-	// Controls whether the editor should render indent guides.
 	"editor.guides.indentation": true,
-	// Controls whether the cursor should be hidden in the overview ruler.
 	"editor.hideCursorInOverviewRuler": false,
-	// Prefer showing hovers above the line, if there's space.
-	"editor.hover.above": true,
-	// Controls the delay in milliseconds after which the hover is shown.
-	"editor.hover.delay": 300,
-	// Controls whether the hover is shown.
-	//  - on: Hover is enabled.
-	//  - off: Hover is disabled.
-	//  - onKeyboardModifier: Hover is shown when holding `Control` or `Alt` (the opposite modifier of `editor.multiCursorModifier`)
-	"editor.hover.enabled": "on",
-	// Controls the delay in milliseconds after which the hover is hidden. Requires `editor.hover.sticky` to be enabled.
-	"editor.hover.hidingDelay": 300,
-	// Controls whether long line warning hovers are shown, such as when tokenization is skipped or rendering is paused.
 	"editor.hover.showLongLineWarning": true,
-	// Controls whether the hover should remain visible when mouse is moved over it.
 	"editor.hover.sticky": true,
-	// The number of spaces used for indentation or `"tabSize"` to use the value from `editor.tabSize`. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
 	"editor.indentSize": "tabSize",
-	// Make scrolling inertial - mostly useful with touchpad on linux.
 	"editor.inertialScroll": false,
-	// Enables the inlay hints in the editor.
-	//  - on: Inlay hints are enabled
-	//  - onUnlessPressed: Inlay hints are showing by default and hide when holding Ctrl+Alt
-	//  - offUnlessPressed: Inlay hints are hidden by default and show when holding Ctrl+Alt
-	//  - off: Inlay hints are disabled
 	"editor.inlayHints.enabled": "on",
-	// Controls font family of inlay hints in the editor. When set to empty, the `editor.fontFamily` is used.
 	"editor.inlayHints.fontFamily": "",
-	// Controls font size of inlay hints in the editor. As default the `editor.fontSize` is used when the configured value is less than `5` or greater than the editor font size.
 	"editor.inlayHints.fontSize": 0,
-	// Maximum overall length of inlay hints, for a single line, before they get truncated by the editor. Set to `0` to never truncate
 	"editor.inlayHints.maximumLength": 43,
-	// Enables the padding around the inlay hints in the editor.
 	"editor.inlayHints.padding": false,
-	// Controls whether the accessibility hint should be provided to screen reader users when an inline completion is shown.
 	"editor.inlineCompletionsAccessibilityVerbose": false,
-	// Controls whether showing a suggestion will shift the code to make space for the suggestion inline.
 	"editor.inlineSuggest.edits.allowCodeShifting": "always",
-	// Controls whether larger suggestions can be shown side by side.
-	//  - auto: Larger suggestions will show side by side if there is enough space, otherwise they will be shown below.
-	//  - never: Larger suggestions are never shown side by side and will always be shown below.
 	"editor.inlineSuggest.edits.renderSideBySide": "auto",
-	// Controls whether the suggestion will show as collapsed until jumping to it.
 	"editor.inlineSuggest.edits.showCollapsed": false,
-	// Controls whether long distance inline suggestions are shown.
 	"editor.inlineSuggest.edits.showLongDistanceHint": true,
-	// Controls whether to automatically show inline suggestions in the editor.
 	"editor.inlineSuggest.enabled": true,
-	// Controls whether to send request information from the inline suggestion provider.
 	"editor.inlineSuggest.experimental.emptyResponseInformation": true,
 	// Controls whether to show inline suggestions when there is a suggest conflict.
 	"editor.inlineSuggest.experimental.showOnSuggestConflict": "never",
@@ -375,35 +261,46 @@
 	//  - none: The minimap is always shown.
 	//  - mouseover: The minimap is hidden when mouse is not over the minimap and shown when mouse is over the minimap.
 	//  - scroll: The minimap is only shown when the editor is scrolled
-	"editor.minimap.autohide": "none",
-	// Controls whether the minimap is shown.
-	"editor.minimap.enabled": true,
-	// Defines the regular expression used to find section headers in comments. The regex must contain a named match group `label` (written as `(?<label>.+)`) that encapsulates the section header, otherwise it will not work. Optionally you can include another match group named `separator`. Use \n in the pattern to match multi-line headers.
-	"editor.minimap.markSectionHeaderRegex": "\\bMARK:\\s*(?<separator>-?)\\s*(?<label>.*)$",
-	// Limit the width of the minimap to render at most a certain number of columns.
-	"editor.minimap.maxColumn": 120,
-	// Render the actual characters on a line as opposed to color blocks.
-	"editor.minimap.renderCharacters": true,
-	// Scale of content drawn in the minimap: 1, 2 or 3.
-	"editor.minimap.scale": 1,
-	// Controls the font size of section headers in the minimap.
-	"editor.minimap.sectionHeaderFontSize": 9,
-	// Controls the amount of space (in pixels) between characters of section header. This helps the readability of the header in small font sizes.
-	"editor.minimap.sectionHeaderLetterSpacing": 1,
-	// Controls whether MARK: comments are shown as section headers in the minimap.
-	"editor.minimap.showMarkSectionHeaders": true,
-	// Controls whether named regions are shown as section headers in the minimap.
-	"editor.minimap.showRegionSectionHeaders": true,
-	// Controls when the minimap slider is shown.
-	"editor.minimap.showSlider": "mouseover",
-	// Controls the side where to render the minimap.
-	"editor.minimap.side": "right",
-	// Controls the size of the minimap.
-	//  - proportional: The minimap has the same size as the editor contents (and might scroll).
-	//  - fill: The minimap will stretch or shrink as necessary to fill the height of the editor (no scrolling).
-	//  - fit: The minimap will shrink as necessary to never be larger than the editor (no scrolling).
-	"editor.minimap.size": "proportional",
-	// Controls what happens when middle mouse button is clicked in the editor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	"editor.minimap.enabled": false,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	"editor.mouseMiddleClickAction": "default",
 	// A multiplier to be used on the `deltaX` and `deltaY` of mouse wheel scroll events.
 	"editor.mouseWheelScrollSensitivity": 1,
@@ -762,106 +659,9 @@
 		"textMateRules": []
 	},
 
-	"files.associations": {
-			"*.embeddedhtml": "html",
-			".env*": "dotenv"
-	},
+	"breadcrumbs.enabled": false,
 	//<================>TERMINAL<================>
-	//<================>LANGUAGES<================>
-	//<========>HTML<========>
-	//<========>CSS<========>
-	//<========>JS/TS<========>
-	//<========>PYTHON<========>
-	//<================>EXTENSIONS<================>
-	//<========>PRETTIER<========>
-	//<========>IMPORT COST<========>
-	//<========>EDITOR CONFIG<========>
-	//<========>BACKGROUND<========>
-	"background.backgroundBlur": [
-		"0",
-		"2px",
-		"0",
-		"0"
-	],
-	"background.backgroundOpacity": [
-		0.1,
-		0.16,
-		0.1,
-		0.1
-	],
-	"background.editorBackgrounds": [
-		"C:/Visuals/VisualStudioCode/9921de42ede13832ff5b845c71db8b44.gif"
-	],
-
-
-
-
-
-
-
-
-
-
-
 	
-
-
-
-
-
-			/*==>>workbench<<==*/
-	"breadcrumbs.enabled": true,
-	"breadcrumbs.filePath": "on",
-	"breadcrumbs.icons": true,
-	"breadcrumbs.showArrays": true,
-	"breadcrumbs.showBooleans": true,
-	"breadcrumbs.showClasses": true,
-	"breadcrumbs.showConstants": true,
-	"breadcrumbs.showConstructors": true,
-	"breadcrumbs.showEnumMembers": true,
-	"breadcrumbs.showEnums": true,
-	"breadcrumbs.showEvents": true,
-	"breadcrumbs.showFields": true,
-	"breadcrumbs.showFiles": true,
-	"breadcrumbs.showFunctions": true,
-	"breadcrumbs.showInterfaces": true,
-	"breadcrumbs.showKeys": true,
-	"breadcrumbs.showMethods": true,
-	"breadcrumbs.showModules": true,
-	"breadcrumbs.showNamespaces": true,
-	"breadcrumbs.showNull": true,
-	"breadcrumbs.showNumbers": true,
-	"breadcrumbs.showObjects": true,
-	"breadcrumbs.showOperators": true,
-	"breadcrumbs.showPackages": true,
-	"breadcrumbs.showProperties": true,
-	"breadcrumbs.showStrings": true,
-	"breadcrumbs.showStructs": true,
-	"breadcrumbs.showTypeParameters": true,
-	"breadcrumbs.showVariables": true,
-	"breadcrumbs.symbolPath": "on",
-	"breadcrumbs.symbolPathSeparator": ".",
-	"breadcrumbs.symbolSortOrder": "position",
-	/*==>>workbench<<==*/
-
-	//============extension=================
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	// External Terminal
 	// When opening a file from the Explorer in a terminal, determines what kind of terminal will be launched
@@ -2580,6 +2380,1138 @@
 		"vscode.terminal-suggest": true
 	},
 	"terminal.integrated.initialHint": false,
+	//<================>LANGUAGES<================>
+	//<========>HTML<========>
+	"html.autoClosingTags": true,
+	"html.autoCreateQuotes": true,
+	"html.completion.attributeDefaultValue": "doublequotes",
+	"html.customData": [],
+	"html.format.contentUnformatted": "pre,code,textarea",
+	"html.format.enable": true,
+	"html.format.extraLiners": "head, body, /html",
+	"html.format.indentHandlebars": false,
+	"html.format.indentInnerHtml": false,
+	"html.format.maxPreserveNewLines": null,
+	"html.format.preserveNewLines": true,
+	"html.format.templating": false,
+	"html.format.unformatted": "wbr",
+	"html.format.unformattedContentDelimiter": "",
+	"html.format.wrapAttributes": "auto",
+	"html.format.wrapAttributesIndentSize": null,
+	"html.format.wrapLineLength": 120,
+	"html.hover.documentation": true,
+	"html.hover.references": true,
+	"html.mirrorCursorOnMatchingTag": false,
+	"html.suggest.hideEndTagSuggestions": false,
+	"html.suggest.html5": true,
+	"html.trace.server": "off",
+	"html.validate.scripts": true,
+	"html.validate.styles": true,
+	//<========>CSS<========>
+	"css.completion.completePropertyWithSemicolon": true,
+	"css.completion.triggerPropertyValueCompletion": true,
+	"css.customData": [],
+	"css.format.braceStyle": "collapse",
+	"css.format.enable": true,
+	"css.format.maxPreserveNewLines": null,
+	"css.format.newlineBetweenRules": true,
+	"css.format.newlineBetweenSelectors": true,
+	"css.format.preserveNewLines": true,
+	"css.format.spaceAroundSelectorSeparator": false,
+	"css.hover.documentation": true,
+	"css.hover.references": true,
+	"css.lint.argumentsInColorFunction": "error",
+	"css.lint.boxModel": "ignore",
+	"css.lint.compatibleVendorPrefixes": "ignore",
+	"css.lint.duplicateProperties": "ignore",
+	"css.lint.emptyRules": "warning",
+	"css.lint.float": "ignore",
+	"css.lint.fontFaceProperties": "warning",
+	"css.lint.hexColorLength": "error",
+	"css.lint.idSelector": "ignore",
+	"css.lint.ieHack": "ignore",
+	"css.lint.important": "ignore",
+	"css.lint.importStatement": "ignore",
+	"css.lint.propertyIgnoredDueToDisplay": "warning",
+	"css.lint.universalSelector": "ignore",
+	"css.lint.unknownAtRules": "warning",
+	"css.lint.unknownProperties": "warning",
+	"css.lint.unknownVendorSpecificProperties": "ignore",
+	"css.lint.validProperties": [],
+	"css.lint.vendorPrefix": "warning",
+	"css.lint.zeroUnits": "ignore",
+	"css.trace.server": "off",
+	"css.validate": true,
+	//<========>JS/TS<========>
+	"js/ts.experimental.useTsgo": false,
+	"js/ts.locale": "auto",
+	"js/ts.tsc.autoDetect": "on",
+	"js/ts.tsdk.path": "",
+	"js/ts.preferences.autoImportFileExcludePatterns": [],
+	"js/ts.preferences.autoImportSpecifierExcludeRegexes": [],
+	"js/ts.preferences.importModuleSpecifier": "shortest",
+	"js/ts.preferences.importModuleSpecifierEnding": "auto",
+	"js/ts.preferences.includePackageJsonAutoImports": "auto",
+	"js/ts.preferences.jsxAttributeCompletionStyle": "auto",
+	"js/ts.preferences.organizeImports": {},
+	"js/ts.preferences.preferTypeOnlyAutoImports": false,
+	"js/ts.preferences.quoteStyle": "auto",
+	"js/ts.preferences.renameMatchingJsxTags": true,
+	"js/ts.preferences.useAliasesForRenames": true,
+	"js/ts.format.enabled": true,
+	"js/ts.format.indentSwitchCase": true,
+	"js/ts.format.insertSpaceAfterCommaDelimiter": true,
+	"js/ts.format.insertSpaceAfterConstructor": false,
+	"js/ts.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"js/ts.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"js/ts.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"js/ts.format.insertSpaceAfterSemicolonInForStatements": true,
+	"js/ts.format.insertSpaceAfterTypeAssertion": false,
+	"js/ts.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"js/ts.format.insertSpaceBeforeFunctionParenthesis": false,
+	"js/ts.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"js/ts.format.placeOpenBraceOnNewLineForFunctions": false,
+	"js/ts.format.semicolons": "ignore",
+	"js/ts.reportStyleChecksAsWarnings": true,
+	"js/ts.suggestionActions.enabled": true,
+	"js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+	"js/ts.validate.enabled": true,
+	"js/ts.implicitProjectConfig.checkJs": false,
+	"js/ts.implicitProjectConfig.experimentalDecorators": false,
+	"js/ts.implicitProjectConfig.module": "ESNext",
+	"js/ts.implicitProjectConfig.strict": true,
+	"js/ts.implicitProjectConfig.strictFunctionTypes": true,
+	"js/ts.implicitProjectConfig.strictNullChecks": true,
+	"js/ts.implicitProjectConfig.target": "ES2024",
+	"js/ts.autoClosingTags.enabled": true,
+	"js/ts.hover.maximumLength": 500,
+	"js/ts.preferGoToSourceDefinition": false,
+	"js/ts.updateImportsOnFileMove.enabled": "prompt",
+	"js/ts.updateImportsOnPaste.enabled": true,
+	"js/ts.workspaceSymbols.excludeLibrarySymbols": true,
+	"js/ts.workspaceSymbols.scope": "allOpenProjects",
+	"js/ts.suggest.autoImports": true,
+	"js/ts.suggest.classMemberSnippets.enabled": true,
+	"js/ts.suggest.completeFunctionCalls": false,
+	"js/ts.suggest.enabled": true,
+	"js/ts.suggest.includeAutomaticOptionalChainCompletions": true,
+	"js/ts.suggest.includeCompletionsForImportStatements": true,
+	"js/ts.suggest.jsdoc.enabled": true,
+	"js/ts.suggest.jsdoc.generateReturns": true,
+	"js/ts.suggest.names": true,
+	"js/ts.suggest.objectLiteralMethodSnippets.enabled": true,
+	"js/ts.suggest.paths": true,
+	"js/ts.implementationsCodeLens.enabled": false,
+	"js/ts.implementationsCodeLens.showOnAllClassMethods": false,
+	"js/ts.implementationsCodeLens.showOnInterfaceMethods": false,
+	"js/ts.referencesCodeLens.enabled": false,
+	"js/ts.referencesCodeLens.showOnAllFunctions": false,
+	"js/ts.inlayHints.enumMemberValues.enabled": false,
+	"js/ts.inlayHints.functionLikeReturnTypes.enabled": false,
+	"js/ts.inlayHints.parameterNames.enabled": "none",
+	"js/ts.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+	"js/ts.inlayHints.parameterTypes.enabled": false,
+	"js/ts.inlayHints.propertyDeclarationTypes.enabled": false,
+	"js/ts.inlayHints.variableTypes.enabled": false,
+	"js/ts.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+	"js/ts.tsdk.promptToUseWorkspaceVersion": false,
+	"js/ts.tsserver.automaticTypeAcquisition.enabled": true,
+	"js/ts.tsserver.checkNpmIsInstalled": true,
+	"js/ts.tsserver.diagnosticDir": "",
+	"js/ts.tsserver.heapProfile": {},
+	"js/ts.tsserver.heapSnapshot": 0,
+	"js/ts.tsserver.log": "off",
+	"js/ts.tsserver.maxMemory": 3072,
+	"js/ts.tsserver.node.path": "",
+	"js/ts.tsserver.npm.path": "",
+	"js/ts.tsserver.pluginPaths": [],
+	"js/ts.tsserver.tracing.enabled": false,
+	"js/ts.tsserver.useSyntaxServer": "auto",
+	"js/ts.tsserver.watchOptions": "vscode",
+	"js/ts.tsserver.web.projectWideIntellisense.enabled": true,
+	"js/ts.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
+	"js/ts.tsserver.web.typeAcquisition.enabled": true,
+
+
+
+	"typescript.experimental.useTsgo": false,
+	"typescript.locale": "auto",
+	"typescript.tsc.autoDetect": "on",
+	"typescript.tsdk": "",
+	"typescript.preferences.autoImportFileExcludePatterns": [],
+	"typescript.preferences.autoImportSpecifierExcludeRegexes": [],
+	"typescript.preferences.importModuleSpecifier": "shortest",
+	"typescript.preferences.importModuleSpecifierEnding": "auto",
+	"typescript.preferences.includePackageJsonAutoImports": "auto",
+	"typescript.preferences.jsxAttributeCompletionStyle": "auto",
+	"typescript.preferences.organizeImports": {},
+	"typescript.preferences.preferTypeOnlyAutoImports": false,
+	"typescript.preferences.quoteStyle": "auto",
+	"typescript.preferences.renameMatchingJsxTags": true,
+	"typescript.preferences.useAliasesForRenames": true,
+	"typescript.format.enable": true,
+	"typescript.format.indentSwitchCase": true,
+	"typescript.format.insertSpaceAfterCommaDelimiter": true,
+	"typescript.format.insertSpaceAfterConstructor": false,
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"typescript.format.insertSpaceAfterTypeAssertion": false,
+	"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"typescript.format.semicolons": "ignore",
+	"typescript.reportStyleChecksAsWarnings": true,
+	"typescript.suggestionActions.enabled": true,
+	"typescript.tsserver.experimental.enableProjectDiagnostics": false,
+	"typescript.validate.enable": true,
+	"typescript.autoClosingTags": true,
+	"typescript.preferGoToSourceDefinition": false,
+	"typescript.updateImportsOnFileMove.enabled": "prompt",
+	"typescript.updateImportsOnPaste.enabled": true,
+	"typescript.workspaceSymbols.excludeLibrarySymbols": true,
+	"typescript.workspaceSymbols.scope": "allOpenProjects",
+	"typescript.suggest.autoImports": true,
+	"typescript.suggest.classMemberSnippets.enabled": true,
+	"typescript.suggest.completeFunctionCalls": false,
+	"typescript.suggest.completeJSDocs": true,
+	"typescript.suggest.enabled": true,
+	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"typescript.suggest.includeCompletionsForImportStatements": true,
+	"typescript.suggest.jsdoc.generateReturns": true,
+	"typescript.suggest.objectLiteralMethodSnippets.enabled": true,
+	"typescript.suggest.paths": true,
+	"typescript.implementationsCodeLens.enabled": false,
+	"typescript.implementationsCodeLens.showOnAllClassMethods": false,
+	"typescript.implementationsCodeLens.showOnInterfaceMethods": false,
+	"typescript.referencesCodeLens.enabled": false,
+	"typescript.referencesCodeLens.showOnAllFunctions": false,
+	"typescript.inlayHints.enumMemberValues.enabled": false,
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+	"typescript.inlayHints.parameterNames.enabled": "none",
+	"typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+	"typescript.inlayHints.parameterTypes.enabled": false,
+	"typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+	"typescript.inlayHints.variableTypes.enabled": false,
+	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+	"typescript.check.npmIsInstalled": true,
+	"typescript.disableAutomaticTypeAcquisition": false,
+	"typescript.enablePromptUseWorkspaceTsdk": false,
+	"typescript.npm": "",
+	"typescript.tsserver.enableTracing": false,
+	"typescript.tsserver.log": "off",
+	"typescript.tsserver.maxTsServerMemory": 3072,
+	"typescript.tsserver.nodePath": "",
+	"typescript.tsserver.pluginPaths": [],
+	"typescript.tsserver.useSyntaxServer": "auto",
+	"typescript.tsserver.watchOptions": "vscode",
+	"typescript.tsserver.web.projectWideIntellisense.enabled": true,
+	"typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
+	"typescript.tsserver.web.typeAcquisition.enabled": true,
+	//  For example: `{"vue-html": "html", "javascript": "javascriptreact"}`
+	"javascript.preferences.autoImportFileExcludePatterns": [],
+	"javascript.preferences.autoImportSpecifierExcludeRegexes": [],
+	"javascript.preferences.importModuleSpecifier": "shortest",
+	"javascript.preferences.importModuleSpecifierEnding": "auto",
+	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
+	"javascript.preferences.organizeImports": {},
+	"javascript.preferences.quoteStyle": "auto",
+	"javascript.preferences.renameMatchingJsxTags": true,
+	"javascript.preferences.useAliasesForRenames": true,
+	"javascript.format.enable": true,
+	"javascript.format.indentSwitchCase": true,
+	"javascript.format.insertSpaceAfterCommaDelimiter": true,
+	"javascript.format.insertSpaceAfterConstructor": false,
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+	"javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"javascript.format.semicolons": "ignore",
+	"javascript.suggestionActions.enabled": true,
+	"javascript.validate.enable": true,
+	"javascript.autoClosingTags": true,
+	"javascript.preferGoToSourceDefinition": false,
+	"javascript.updateImportsOnFileMove.enabled": "prompt",
+	"javascript.updateImportsOnPaste.enabled": true,
+	"javascript.suggest.autoImports": true,
+	"javascript.suggest.classMemberSnippets.enabled": true,
+	"javascript.suggest.completeFunctionCalls": false,
+	"javascript.suggest.completeJSDocs": true,
+	"javascript.suggest.enabled": true,
+	"javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"javascript.suggest.includeCompletionsForImportStatements": true,
+	"javascript.suggest.jsdoc.generateReturns": true,
+	"javascript.suggest.names": true,
+	"javascript.suggest.paths": true,
+	"javascript.referencesCodeLens.enabled": false,
+	"javascript.referencesCodeLens.showOnAllFunctions": false,
+	"javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+	"javascript.inlayHints.parameterNames.enabled": "none",
+	"javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+	"javascript.inlayHints.parameterTypes.enabled": false,
+	"javascript.inlayHints.propertyDeclarationTypes.enabled": false,
+	"javascript.inlayHints.variableTypes.enabled": false,
+	"javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+
+
+
+	//<========>JSON<========>
+	"json.colorDecorators.enable": true,
+	"json.format.enable": true,
+	"json.format.keepLines": false,
+	"json.maxItemsComputed": 5000,
+	"json.schemaDownload.enable": true,
+	"json.schemaDownload.trustedDomains": {},
+	"json.schemas": [],
+	"json.trace.server": "off",
+	"json.validate.enable": true,
+	//<========>PHP<========>
+	"phpprofiler.cachegrind": false,
+	"php.suggest.basic": false,
+	"php.validate.enable": false,
+	"php.validate.executablePath": null,
+	"php.validate.run": "onSave",
+	"php.cache.location": null,
+	"php.codeActions.enabled": true,
+	"php.codeLens.enabled": true,
+	"php.completion.autoimport": "auto-import",
+	"php.completion.autoimport-docblock": "default",
+	"php.completion.docblock": true,
+	"php.completion.getterSnippet": "",
+	"php.completion.intelliPHP.preSelect": false,
+	"php.completion.namingConvention": "camelCase",
+	"php.completion.parameters": "parentheses",
+	"php.completion.setterSnippet": "",
+	"php.completion.showDeprecated": true,
+	"php.completion.showNamespaceLabel": true,
+	"php.completion.showParameters": false,
+	"php.completion.starredSuggestions": true,
+	"php.debug.port": [],
+	// "php.docblock.classSnippet": {
+	"php.docblock.classSnippet": {},
+	"php.docblock.colorMode": null,
+	// "php.docblock.functionSnippet": {
+	"php.docblock.functionSnippet": {},
+	"php.docblock.getterSetterSnippet": {},
+	// "php.docblock.packageSnippet": {
+	"php.docblock.packageSnippet": {},
+	// "php.docblock.propertySnippet": {
+	"php.docblock.propertySnippet": {},
+	// "php.docblock.variableSnippet": {
+	"php.docblock.variableSnippet": {},
+	"php.executablePath": "",
+	// Example: `"php.executables": { "v7.4": "/usr/bin/php7.4" }`
+	"php.executables": {},
+	"php.files.exclude": null,
+	"php.format.autoimport": null,
+	"php.format.autoimport-docblock": null,
+	"php.format.exclude": null,
+	"php.highlight-todo.enable": true,
+	"php.highlight-todo.style": {},
+	"php.hover.containingClass": true,
+	"php.hover.documentation": true,
+	"php.hover.fullname": false,
+	"php.hover.parameters": true,
+	"php.hover.parametersFullName": false,
+	"php.inlayHints.insertOnDoubleClick": true,
+	"php.inlayHints.parameters.byReference": true,
+	"php.inlayHints.parameters.enabled": true,
+	"php.inlayHints.parameters.suppressNameMatchingValue": false,
+	"php.inlayHints.types.lambdaParameter": true,
+	"php.inlayHints.types.return": true,
+	"php.inlayHints.types.suppressVariableFromLiteral": true,
+	"php.inlayHints.types.variable": false,
+	"php.linkedEditing.variables": false,
+	"php.navigation.referencesScope": "any",
+	// "php.problems.exclude": {
+	"php.problems.exclude": null,
+	"php.problems.excludeGitIgnore": false,
+	"php.problems.scope": "opened",
+	"php.problems.workspaceAnalysis": true,
+	"php.sortUses.caseSensitive": false,
+	//   "php.stubs": ["*", "com", "pcntl", "xdebug"]
+	"php.stubs": [],
+	"php.version": "",
+	"php.workspace.includePath": "",
+	"php.workspace.shortOpenTag": "auto",
+	"phpTools.language": null,
+	"phpTools.license": "",
+	"phpTools.parallelismLimit": null,
+	"phpTools.suppressPremiumFeatures": false,
+	"phpunit.command": "\"${php}\" ${phpargs} \"${phpunit}\" ${phpunitargs}",
+	"phpunit.config": null,
+	"phpunit.enableAutomaticRefresh": true,
+	// Example: `./vendor/bin/phpunit` or `"phpunit"`.
+	"phpunit.phpunit": null,
+	"phpunit.postTask": "",
+	"phpunit.preTask": "",
+	"php.format.codeStyle": "PSR-12",
+	"php.format.rules.blankLinesAfterClass": "keep",
+	"php.format.rules.blankLinesAfterClassBody": "keep",
+	"php.format.rules.blankLinesAfterFunction": "keep",
+	"php.format.rules.blankLinesAfterMethod": "keep",
+	"php.format.rules.blankLinesAfterNamespace": "keep",
+	"php.format.rules.blankLinesAfterOpenTag": "keep",
+	"php.format.rules.blankLinesAfterUseStatements": "keep",
+	"php.format.rules.blankLinesAroundClassConstant": "keep",
+	"php.format.rules.blankLinesAroundEnumCase": "keep",
+	"php.format.rules.blankLinesAroundProperty": "keep",
+	"php.format.rules.blankLinesBeforeClass": "keep",
+	"php.format.rules.blankLinesBeforeClassBody": "keep",
+	"php.format.rules.blankLinesBeforeFunction": "keep",
+	"php.format.rules.blankLinesBeforeFunctionBody": "keep",
+	"php.format.rules.blankLinesBeforeMethod": "keep",
+	"php.format.rules.blankLinesBeforeMethodBody": "keep",
+	"php.format.rules.blankLinesBeforeNamespace": "keep",
+	"php.format.rules.blankLinesBeforeReturnStatement": "keep",
+	"php.format.rules.blankLinesBeforeUseStatements": "keep",
+	"php.format.rules.blankLinesBetweenUseTypes": "keep",
+	"php.format.rules.maxBlankLines": "keep",
+	"php.format.rules.addCommaAfterLastArrayElement": null,
+	"php.format.rules.addCommaAfterLastCallParameter": null,
+	"php.format.rules.addCommaAfterLastDeclParameter": null,
+	"php.format.rules.booleanConstantCasing": null,
+	"php.format.rules.importSorting": null,
+	"php.format.rules.importSortingCaseSensitive": null,
+	"php.format.rules.nullConstantCasing": null,
+	"php.format.rules.indentBraces": null,
+	"php.format.rules.catchOnNewLine": null,
+	"php.format.rules.elseOnNewLine": null,
+	"php.format.rules.endWithNewLine": null,
+	"php.format.rules.finallyOnNewLine": null,
+	"php.format.rules.openBraceOnNewLineForAnonymousClasses": null,
+	"php.format.rules.openBraceOnNewLineForBlocks": null,
+	"php.format.rules.openBraceOnNewLineForFunctions": null,
+	"php.format.rules.openBraceOnNewLineForLambdas": null,
+	"php.format.rules.openBraceOnNewLineForNamespaces": null,
+	"php.format.rules.openBraceOnNewLineForTypes": null,
+	"php.format.rules.spaceAfterCast": null,
+	"php.format.rules.spaceAfterUnaryNot": null,
+	"php.format.rules.spaceAroundConcatenation": null,
+	"php.format.rules.spaceBeforeColonInControlStatements": null,
+	"php.format.rules.spaceBeforeColonInReturnType": null,
+	"php.format.rules.spaceBeforeParenthesesInArrowFunctions": null,
+	"php.format.rules.spaceBeforeParenthesesInCalls": null,
+	"php.format.rules.spaceBeforeParenthesesInControlStatements": null,
+	"php.format.rules.spaceBeforeParenthesesInDeclarations": null,
+	"php.format.rules.spaceBeforeUnaryNot": null,
+	"php.format.rules.spaceWithinArrayInitilizersParens": null,
+	"php.format.rules.spaceWithinBrackets": null,
+	"php.format.rules.spaceWithinBracketsAroundExpression": null,
+	"php.format.rules.spaceWithinCallParens": null,
+	"php.format.rules.spaceWithinCatchParens": null,
+	"php.format.rules.spaceWithinDeclParens": null,
+	"php.format.rules.spaceWithinExpressionParens": null,
+	"php.format.rules.spaceWithinForeachParens": null,
+	"php.format.rules.spaceWithinForParens": null,
+	"php.format.rules.spaceWithinIfParens": null,
+	"php.format.rules.spaceWithinSwitchParens": null,
+	"php.format.rules.spaceWithinWhileParens": null,
+	"php.format.rules.alignConsecutiveAssignments": null,
+	"php.format.rules.alignConstants": null,
+	"php.format.rules.alignEnumCases": null,
+	"php.format.rules.alignMatchArmBodies": null,
+	"php.format.rules.alignProperties": null,
+	"php.format.rules.arrayInitializersAlignKeyValuePairs": null,
+	"php.format.rules.arrayInitializersNewLineAfterLastElement": null,
+	"php.format.rules.arrayInitializersNewLineBeforeFirstElement": null,
+	"php.format.rules.arrayInitializersWrap": null,
+	"php.format.rules.callParametersNewLineAfterLeftParen": null,
+	"php.format.rules.callParametersNewLineBeforeRightParen": null,
+	"php.format.rules.callParametersWrap": null,
+	"php.format.rules.chainedMethodCallsSemicolonOnNewLine": null,
+	"php.format.rules.chainedMethodCallsWrap": null,
+	"php.format.rules.declCompactEmptyBody": null,
+	"php.format.rules.declKeepRightParenAndOpenBraceOnOneLine": null,
+	"php.format.rules.declParametersNewLineAfterLeftParen": null,
+	"php.format.rules.declParametersNewLineBeforeRightParen": null,
+	"php.format.rules.declParametersWrap": null,
+	"php.format.rules.forStatementNewLineAfterLeftParen": null,
+	"php.format.rules.forStatementNewLineBeforeRightParen": null,
+	"php.format.rules.forStatementWrap": null,
+	"php.format.rules.groupUseNewLineBeforeFirstDeclaration": null,
+	"php.format.rules.groupUseWrap": null,
+	"php.format.rules.ifStatementNewLineAfterLeftParen": null,
+	"php.format.rules.ifStatementNewLineBeforeRightParen": null,
+	"php.format.rules.implementsListWrap": null,
+	"php.format.rules.indentHeredoc": null,
+	"php.format.rules.inlineHeredoc": null,
+	"php.format.rules.keepClassesOnOneLine": null,
+	"php.format.rules.keepControlStatementsOnOneLine": null,
+	"php.format.rules.keepFunctionsOnOneLine": null,
+	"php.format.rules.newLineAfterImplements": null,
+	"php.format.rules.switchStatementNewLineAfterLeftParen": null,
+	"php.format.rules.switchStatementNewLineBeforeRightParen": null,
+	"php.format.rules.whileStatementNewLineAfterLeftParen": null,
+	"php.format.rules.whileStatementNewLineBeforeRightParen": null,
+	"phpprofiler.hotpath.treshold": 1,
+	//<========>PYTHON<========>
+	"python.activeStateToolPath": "state",
+	"python.autoComplete.extraPaths": [],
+	"python.condaPath": "",
+	"python.createEnvironment.contentButton": "hide",
+	"python.createEnvironment.trigger": "prompt",
+	"python.defaultInterpreterPath": "python",
+	"python.envFile": "${workspaceFolder}/.env",
+	"python.experiments.enabled": true,
+	"python.experiments.optInto": [],
+	"python.experiments.optOutFrom": [],
+	"python.globalModuleInstallation": false,
+	"python.interpreter.infoVisibility": "onPythonRelated",
+	"python.languageServer": "Default",
+	"python.locator": "js",
+	"python.logging.level": "error",
+	"python.missingPackage.severity": "Hint",
+	"python.pipenvPath": "pipenv",
+	"python.pixiToolPath": "pixi",
+	"python.poetryPath": "poetry",
+	"python.REPL.enableREPLSmartSend": true,
+	"python.REPL.provideVariables": true,
+	"python.REPL.sendToNativeREPL": false,
+	"python.terminal.activateEnvInCurrentTerminal": false,
+	"python.terminal.activateEnvironment": true,
+	"python.terminal.executeInFileDir": false,
+	"python.terminal.focusAfterLaunch": false,
+	"python.terminal.launchArgs": [],
+	"python.terminal.shellIntegration.enabled": true,
+	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+	"python.testing.autoTestDiscoverOnSavePattern": "**/*.py",
+	"python.testing.cwd": null,
+	"python.testing.debugPort": 3000,
+	"python.testing.promptToConfigure": true,
+	"python.testing.pytestArgs": [],
+	"python.testing.pytestEnabled": false,
+	"python.testing.pytestPath": "pytest",
+	"python.testing.unittestArgs": [],
+	"python.testing.unittestEnabled": false,
+	"python.useEnvironmentsExtension": false,
+	"python.venvFolders": [],
+	"python.venvPath": "",
+	"python.analysis.aiCodeActions": {},
+	"python.analysis.aiHoverSummaries": false,
+	"python.analysis.autoFormatStrings": false,
+	"python.analysis.autoImportCompletions": false,
+	"python.analysis.autoIndent": true,
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.autoSplitStrings": true,
+	"python.analysis.autoTranslateDocstrings": false,
+	"python.analysis.cacheLSPData": false,
+	"python.analysis.completeFunctionParens": false,
+	"python.analysis.diagnosticMode": "openFilesOnly",
+	"python.analysis.diagnosticSeverityOverrides": {},
+	"python.analysis.diagnosticsSource": "Pylance",
+	"python.analysis.disableTaggedHints": false,
+	"python.analysis.displayEnglishDiagnostics": false,
+	"python.analysis.enableAsyncProgram": false,
+	"python.analysis.enableColorPicker": true,
+	"python.analysis.enableEditableInstalls": true,
+	"python.analysis.enableExternalTypeServer": false,
+	"python.analysis.enableMangleName": false,
+	"python.analysis.enableParallelIndexing": false,
+	"python.analysis.enablePerfTelemetry": false,
+	"python.analysis.enablePytestSupport": true,
+	"python.analysis.enableSnippetExtraTelemetry": false,
+	"python.analysis.enableTroubleshootMissingImports": false,
+	"python.analysis.exclude": [],
+	"python.analysis.extraCommitChars": false,
+	"python.analysis.extraPaths": [],
+	"python.analysis.findRefsInBackgroundThread": false,
+	"python.analysis.fixAll": [],
+	"python.analysis.generateWithTypeAnnotation": false,
+	"python.analysis.gotoDefinitionInStringLiteral": true,
+	"python.analysis.ignore": [],
+	"python.analysis.importFormat": "absolute",
+	"python.analysis.include": [],
+	"python.analysis.includeAliasesFromUserFiles": false,
+	"python.analysis.includeExtraPathSymbolsInSymbolSearch": false,
+	"python.analysis.includeVenvInWorkspaceSymbols": false,
+	"python.analysis.indexing": true,
+	"python.analysis.indexing.followSymlinkedFolders": true,
+	"python.analysis.inlayHints.callArgumentNames": "off",
+	"python.analysis.inlayHints.functionReturnTypes": false,
+	"python.analysis.inlayHints.pytestParameters": false,
+	"python.analysis.inlayHints.variableTypes": false,
+	"python.analysis.languageServerMode": "default",
+	"python.analysis.logLevel": "Information",
+	"python.analysis.nodeArguments": [],
+	"python.analysis.nodeExecutable": "",
+	"python.analysis.packageIndexDepths": [],
+	"python.analysis.persistAllIndices": true,
+	"python.analysis.pyrightVersion": "",
+	"python.analysis.referencesCodeLens": false,
+	"python.analysis.regenerateStdLibIndices": false,
+	"python.analysis.reportExtraTelemetry": false,
+	"python.analysis.showOnlyDirectDependenciesInAutoImport": false,
+	"python.analysis.stubPath": "typings",
+	"python.analysis.supportAllPythonDocuments": false,
+	"python.analysis.supportDocstringTemplate": false,
+	"python.analysis.supportRestructuredText": true,
+	"python.analysis.typeCheckingMode": "off",
+	"python.analysis.typeEvaluation.analyzeUnannotatedFunctions": true,
+	"python.analysis.typeEvaluation.deprecateTypingAliases": false,
+	"python.analysis.typeEvaluation.disableBytesTypePromotions": false,
+	"python.analysis.typeEvaluation.enableExperimentalFeatures": false,
+	"python.analysis.typeEvaluation.enableReachabilityAnalysis": false,
+	"python.analysis.typeEvaluation.enableTypeIgnoreComments": true,
+	"python.analysis.typeEvaluation.strictDictionaryInference": false,
+	"python.analysis.typeEvaluation.strictListInference": false,
+	"python.analysis.typeEvaluation.strictParameterNoneValue": true,
+	"python.analysis.typeEvaluation.strictSetInference": false,
+	"python.analysis.typeServerArguments": [],
+	"python.analysis.typeServerExecutable": "",
+	"python.analysis.typeshedPaths": [],
+	"python.analysis.useLibraryCodeForTypes": true,
+	"python.analysis.useNearestConfiguration": false,
+	"python.analysis.userFileIndexingLimit": 2000,
+	"python.terminal.useEnvFile": false,
+	//<================>EXTENSIONS<================>
+	//<========>PRETTIER<========>
+	//  - bradlc.vscode-tailwindcss: Intelligent Tailwind CSS tooling for VS Code
+	//  - bradlc.vscode-tailwindcss: Intelligent Tailwind CSS tooling for VS Code
+	//  - bradlc.vscode-tailwindcss: Intelligent Tailwind CSS tooling for VS Code
+	"tailwindcss-intellisense.trace.server": "off",
+	"tailwindCSS.classAttributes": [],
+	"tailwindCSS.classFunctions": [],
+	"tailwindCSS.codeActions": true,
+	"tailwindCSS.codeLens": true,
+	"tailwindCSS.colorDecorators": true,
+	"tailwindCSS.emmetCompletions": false,
+	"tailwindCSS.experimental.classRegex": [],
+	"tailwindCSS.experimental.configFile": null,
+	"tailwindCSS.files.exclude": [],
+	"tailwindCSS.hovers": true,
+	"tailwindCSS.includeLanguages": {},
+	"tailwindCSS.inspectPort": null,
+	"tailwindCSS.lint.cssConflict": "warning",
+	// Unsupported use of the [`@apply` directive](https://tailwindcss.com/docs/functions-and-directives/#apply)
+	"tailwindCSS.lint.invalidApply": "error",
+	// Unknown or invalid path used with the [`theme` helper](https://tailwindcss.com/docs/functions-and-directives/#theme)
+	"tailwindCSS.lint.invalidConfigPath": "error",
+	// Unknown screen name used with the [`@screen` directive](https://tailwindcss.com/docs/functions-and-directives/#screen)
+	"tailwindCSS.lint.invalidScreen": "error",
+	// Unknown value used with the [`@tailwind` directive](https://tailwindcss.com/docs/functions-and-directives/#tailwind)
+	"tailwindCSS.lint.invalidTailwindDirective": "error",
+	// Unknown variant name used with the [`@variants` directive](https://tailwindcss.com/docs/functions-and-directives/#variants)
+	"tailwindCSS.lint.invalidVariant": "error",
+	// Class variants not in the recommended order (applies in [JIT mode](https://tailwindcss.com/docs/just-in-time-mode) only)
+	"tailwindCSS.lint.recommendedVariantOrder": "warning",
+	"tailwindCSS.lint.suggestCanonicalClasses": "warning",
+	"tailwindCSS.lint.usedBlocklistedClass": "warning",
+	// Root font size in pixels. Used to convert `rem` CSS values to their `px` equivalents. See `tailwindCSS.showPixelEquivalents`.
+	"tailwindCSS.rootFontSize": 16,
+	"tailwindCSS.showPixelEquivalents": true,
+	"tailwindCSS.suggestions": true,
+	// Enable linting. Rules can be configured individually using the `tailwindcss.lint.*` settings
+	"tailwindCSS.validate": true,
+	//<========>PRETTIER<========>
+	"github.copilot.chat.agent.terminal.allowList": null,
+	"github.copilot.chat.agent.terminal.denyList": null,
+	/*Строка  6365: 		"Git Bash": {
+	Строка  6366: 			"source": "Git Bash",
+	Строка  9180: 		"github/copilot-plugins",
+	Строка  9181: 		"github/awesome-copilot"
+	Строка  9369: 		"GitHub.copilot",
+	Строка  9370: 		"GitHub.copilot-chat",*/
+	"github.copilot.chat.additionalReadAccessPaths": [],
+	"github.copilot.chat.agent.autoFix": false,
+	"github.copilot.chat.agent.backgroundTodoAgent.enabled": false,
+	"github.copilot.chat.agent.currentEditorContext.enabled": true,
+	"github.copilot.chat.agent.largeToolResultsToDisk.enabled": true,
+	"github.copilot.chat.agent.largeToolResultsToDisk.thresholdBytes": 8192,
+	"github.copilot.chat.agent.modelDetails.enabled": true,
+	"github.copilot.chat.agent.omitFileAttachmentContents": false,
+	"github.copilot.chat.agent.temperature": 0,
+	"github.copilot.chat.agentDebugLog.enabled": false,
+	"github.copilot.chat.agentDebugLog.fileLogging.enabled": false,
+	"github.copilot.chat.agentDebugLog.fileLogging.flushIntervalMs": 4000,
+	"github.copilot.chat.agentDebugLog.fileLogging.maxRetainedSessionLogs": 50,
+	"github.copilot.chat.agentDebugLog.fileLogging.maxSessionLogSizeMB": 100,
+	"github.copilot.chat.agentHistorySummarizationMode": "",
+	"github.copilot.chat.alternateGeminiModelFPrompt.enabled": false,
+	"github.copilot.chat.alternateGptPrompt.enabled": false,
+	"github.copilot.chat.anthropic.contextEditing.mode": "off",
+	"github.copilot.chat.anthropic.promptCaching.extendedTtl": false,
+	"github.copilot.chat.anthropic.promptCaching.extendedTtlMessages": false,
+	"github.copilot.chat.anthropic.tools.websearch.allowedDomains": [],
+	"github.copilot.chat.anthropic.tools.websearch.blockedDomains": [],
+	"github.copilot.chat.anthropic.tools.websearch.enabled": false,
+	"github.copilot.chat.anthropic.tools.websearch.maxUses": 5,
+	"github.copilot.chat.anthropic.tools.websearch.userLocation": null,
+	"github.copilot.chat.anthropic.useMessagesApi": true,
+	"github.copilot.chat.askAgent.additionalTools": [],
+	"github.copilot.chat.askAgent.model": "",
+	"github.copilot.chat.backgroundAgent.enabled": true,
+	"github.copilot.chat.claude47OpusPrompt.enabled": false,
+	"github.copilot.chat.claudeAgent.allowAutoPermissions": false,
+	"github.copilot.chat.claudeAgent.allowDangerouslySkipPermissions": false,
+	"github.copilot.chat.claudeAgent.enabled": true,
+	"github.copilot.chat.cli.aiGenerateBranchNames.enabled": true,
+	"github.copilot.chat.cli.autoCommit.enabled": true,
+	"github.copilot.chat.cli.autoModel.enabled": false,
+	"github.copilot.chat.cli.branchSupport.enabled": false,
+	"github.copilot.chat.cli.forkSessions.enabled": true,
+	"github.copilot.chat.cli.isolationOption.enabled": true,
+	"github.copilot.chat.cli.lazyLoadSessionItem.enabled": true,
+	"github.copilot.chat.cli.mcp.enabled": true,
+	"github.copilot.chat.cli.planCommand.enabled": true,
+	"github.copilot.chat.cli.planExitMode.enabled": true,
+	"github.copilot.chat.cli.remote.enabled": true,
+	"github.copilot.chat.cli.sessionController.enabled": false,
+	"github.copilot.chat.cli.sessionControllerForSessionsApp.enabled": false,
+	"github.copilot.chat.cli.showExternalSessions": true,
+	"github.copilot.chat.cli.terminalLinks.enabled": true,
+	"github.copilot.chat.cli.thinkingEffort.enabled": true,
+	"github.copilot.chat.cloudAgent.enabled": true,
+	"github.copilot.chat.cloudAgentBackend.version": "v1",
+	"github.copilot.chat.codeGeneration.instructions": [],
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+	"github.copilot.chat.codesearch.agent.enabled": true,
+	"github.copilot.chat.codesearch.enabled": false,
+	"github.copilot.chat.commitMessageGeneration.instructions": [],
+	"github.copilot.chat.completionsFetcher": "",
+	"github.copilot.chat.copilotDebugCommand.enabled": true,
+	"github.copilot.chat.customInstructionsInSystemMessage": true,
+	"github.copilot.chat.debug.promptOverrideFile": null,
+	"github.copilot.chat.debug.promptOverrideString": null,
+	"github.copilot.chat.debug.requestLogger.maxEntries": 100,
+	"github.copilot.chat.debugTerminalCommandPatterns": [],
+	"github.copilot.chat.editRecording.enabled": false,
+	"github.copilot.chat.edits.batchReplaceStringDescriptions": false,
+	"github.copilot.chat.edits.gemini3MultiReplaceString": false,
+	"github.copilot.chat.enableUserPreferences": false,
+	"github.copilot.chat.executionSubagent.enabled": false,
+	"github.copilot.chat.executionSubagent.model": "",
+	"github.copilot.chat.executionSubagent.toolCallLimit": 10,
+	"github.copilot.chat.executionSubagent.useAgenticProxy": false,
+	"github.copilot.chat.exploreAgent.enabled": true,
+	"github.copilot.chat.exploreAgent.model": "",
+	"github.copilot.chat.feedback.onChange": false,
+	"github.copilot.chat.getChangedFilesTool.enabled": false,
+	"github.copilot.chat.githubMcpServer.channel": "stable",
+	"github.copilot.chat.githubMcpServer.enabled": false,
+	"github.copilot.chat.githubMcpServer.lockdown": false,
+	"github.copilot.chat.githubMcpServer.readonly": false,
+	"github.copilot.chat.githubMcpServer.toolsets": [],
+	"github.copilot.chat.gpt55EconomicalSearchAndEdit.enabled": false,
+	"github.copilot.chat.gpt55GetChangedFilesTool.enabled": true,
+	"github.copilot.chat.gpt55LargePromptSections.enabled": false,
+	"github.copilot.chat.gpt55ReadFileTool.enabled": true,
+	"github.copilot.chat.gpt5AlternativePatch": false,
+	"github.copilot.chat.imageUpload.enabled": true,
+	"github.copilot.chat.implementAgent.model": "",
+	"github.copilot.chat.inlineChat.enableThinking": false,
+	"github.copilot.chat.inlineChat.reasoningEffort": "low",
+	"github.copilot.chat.inlineEdits.chatSessionContextProvider.enabled": false,
+	"github.copilot.chat.inlineEdits.diagnosticsContextProvider.enabled": false,
+	"github.copilot.chat.inlineEdits.nextCursorPrediction.currentFileMaxTokens": 3000,
+	"github.copilot.chat.inlineEdits.nextCursorPrediction.displayLine": true,
+	"github.copilot.chat.inlineEdits.renameSymbolSuggestions": true,
+	"github.copilot.chat.inlineEdits.triggerOnEditorChangeAfterSeconds": 10,
+	"github.copilot.chat.inlineEdits.xtabProvider.modelConfiguration": null,
+	"github.copilot.chat.installExtensionSkill.enabled": false,
+	"github.copilot.chat.instantApply.shortContextLimit": 8000,
+	"github.copilot.chat.instantApply.shortContextModelName": "gpt-4o-instant-apply-full-ft-v66-short",
+	"github.copilot.chat.languageContext.fix.typescript.enabled": false,
+	"github.copilot.chat.languageContext.inline.typescript.enabled": false,
+	"github.copilot.chat.languageContext.typescript.cacheTimeout": 500,
+	"github.copilot.chat.languageContext.typescript.enabled": true,
+	"github.copilot.chat.languageContext.typescript.includeDocumentation": false,
+	"github.copilot.chat.languageContext.typescript.items": "double",
+	"github.copilot.chat.localeOverride": "auto",
+	"github.copilot.chat.localIndex.enabled": false,
+	"github.copilot.chat.localWorkspaceRecording.enabled": false,
+	"github.copilot.chat.modelCapabilityOverrides": {},
+	"github.copilot.chat.nesFetcher": "",
+	"github.copilot.chat.newWorkspace.useContext7": false,
+	"github.copilot.chat.newWorkspaceCreation.enabled": true,
+	"github.copilot.chat.notebook.alternativeFormat": "xml",
+	"github.copilot.chat.notebook.alternativeNESFormat.enabled": false,
+	"github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": false,
+	"github.copilot.chat.notebook.followCellExecution.enabled": false,
+	"github.copilot.chat.notebook.summaryExperimentEnabled": false,
+	"github.copilot.chat.notebook.variableFilteringEnabled": false,
+	"github.copilot.chat.omitBaseAgentInstructions": false,
+	"github.copilot.chat.organizationCustomAgents.enabled": true,
+	"github.copilot.chat.organizationInstructions.enabled": true,
+	"github.copilot.chat.otel.captureContent": false,
+	"github.copilot.chat.otel.dbSpanExporter.enabled": false,
+	"github.copilot.chat.otel.enabled": false,
+	"github.copilot.chat.otel.exporterType": "otlp-http",
+	"github.copilot.chat.otel.maxAttributeSizeChars": 0,
+	"github.copilot.chat.otel.otlpEndpoint": "http://localhost:4318",
+	"github.copilot.chat.otel.outfile": "",
+	"github.copilot.chat.planAgent.additionalTools": [],
+	"github.copilot.chat.projectLabels.chat": false,
+	"github.copilot.chat.projectLabels.expanded": false,
+	"github.copilot.chat.projectLabels.inline": false,
+	"github.copilot.chat.promptFileContextProvider.enabled": true,
+	"github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
+	"github.copilot.chat.rateLimitAutoSwitchToAuto": false,
+	"github.copilot.chat.reasoningEffortOverride": null,
+	"github.copilot.chat.responsesApi.promptCacheKey.enabled": false,
+	"github.copilot.chat.responsesApiContextManagement.enabled": false,
+	"github.copilot.chat.responsesApiReasoningSummary": "detailed",
+	"github.copilot.chat.review.intent": false,
+	"github.copilot.chat.reviewAgent.enabled": true,
+	"github.copilot.chat.reviewSelection.enabled": true,
+	"github.copilot.chat.reviewSelection.instructions": [],
+	"github.copilot.chat.scopeSelection": false,
+	"github.copilot.chat.searchSubagent.enabled": false,
+	"github.copilot.chat.searchSubagent.model": "",
+	"github.copilot.chat.searchSubagent.thoroughnessEnabled": false,
+	"github.copilot.chat.searchSubagent.toolCallLimit": 4,
+	"github.copilot.chat.searchSubagent.useAgenticProxy": false,
+	"github.copilot.chat.setupTests.enabled": true,
+	"github.copilot.chat.skillTool.enabled": false,
+	"github.copilot.chat.summarizeAgentConversationHistory.enabled": true,
+	"github.copilot.chat.summarizeAgentConversationHistoryThreshold": 0,
+	"github.copilot.chat.switchAgent.enabled": false,
+	"github.copilot.chat.terminalChatLocation": "chatView",
+	"github.copilot.chat.testGeneration.instructions": [],
+	"github.copilot.chat.tools.defaultToolsGrouped": false,
+	"github.copilot.chat.tools.viewImage.enabled": true,
+	"github.copilot.chat.updated53CodexPrompt.enabled": true,
+	"github.copilot.chat.useProjectTemplates": true,
+	"github.copilot.chat.useResponsesApiTruncation": false,
+	"github.copilot.chat.virtualTools.threshold": 128,
+	"github.copilot.chat.workspace.codeSearchExternalIngest.enabled": true,
+	"github.copilot.chat.workspace.enableCodeSearch": true,
+	"github.copilot.chat.workspace.maxLocalIndexSize": 100000,
+	"github.copilot.chat.workspace.preferredEmbeddingsModel": "",
+	"github.copilot.chat.workspace.prototypeAdoCodeSearchEndpointOverride": "",
+	"github.copilot.editor.enableCodeActions": true,
+	"github.copilot.enable": {},
+	"github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
+	"github.copilot.nextEditSuggestions.eagerness": "auto",
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.nextEditSuggestions.extendedRange": false,
+	"github.copilot.nextEditSuggestions.fixes": true,
+	"github.copilot.nextEditSuggestions.preferredModel": "none",
+	"github.copilot.renameSuggestions.triggerAutomatically": true,
+	"github.copilot.selectedCompletionModel": "",
+	"git.addAICoAuthor": "off",
+	"git.allowForcePush": false,
+	"git.allowNoVerifyCommit": false,
+	"git.alwaysShowStagedChangesResourceGroup": false,
+	"git.alwaysSignOff": false,
+	"git.autofetch": false,
+	"git.autofetchPeriod": 180,
+	"git.autorefresh": true,
+	"git.autoRepositoryDetection": true,
+	"git.autoStash": false,
+	"git.blame.editorDecoration.disableHover": false,
+	"git.blame.editorDecoration.enabled": false,
+	"git.blame.editorDecoration.template": "${subject}, ${authorName} (${authorDateAgo})",
+	"git.blame.ignoreWhitespace": false,
+	"git.blame.statusBarItem.enabled": true,
+	"git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
+	"git.branchPrefix": "",
+	"git.branchProtection": [],
+	"git.branchProtectionPrompt": "alwaysPrompt",
+	"git.branchRandomName.dictionary": [],
+	"git.branchRandomName.enable": false,
+	"git.branchSortOrder": "committerdate",
+	"git.branchValidationRegex": "",
+	"git.branchWhitespaceChar": "-",
+	"git.checkoutType": [],
+	"git.closeDiffOnOperation": false,
+	"git.commandsToLog": [],
+	"git.commitShortHashLength": 7,
+	"git.confirmCommittedDelete": true,
+	"git.confirmEmptyCommits": true,
+	"git.confirmForcePush": true,
+	"git.confirmNoVerifyCommit": true,
+	"git.confirmSync": true,
+	"git.countBadge": "all",
+	"git.decorations.enabled": true,
+	"git.defaultBranchName": "main",
+	"git.defaultCloneDirectory": null,
+	"git.detectSubmodules": true,
+	"git.detectSubmodulesLimit": 10,
+	"git.detectWorktrees": false,
+	"git.detectWorktreesLimit": 50,
+	"git.diagnosticsCommitHook.enabled": false,
+	"git.diagnosticsCommitHook.sources": {},
+	"git.discardUntrackedChangesToTrash": true,
+	"git.enableCommitSigning": false,
+	"git.enabled": true,
+	"git.enableSmartCommit": false,
+	"git.enableStatusBarSync": true,
+	"git.fetchOnPull": false,
+	"git.followTagsWhenSync": false,
+	"git.githubAuthentication": null,
+	"git.ignoredRepositories": [],
+	"git.ignoreLegacyWarning": false,
+	"git.ignoreLimitWarning": false,
+	"git.ignoreMissingGitWarning": false,
+	"git.ignoreRebaseWarning": false,
+	"git.ignoreSubmodules": false,
+	"git.ignoreWindowsGit27Warning": false,
+	"git.inputValidation": false,
+	"git.inputValidationLength": 72,
+	"git.inputValidationSubjectLength": 50,
+	"git.mergeEditor": false,
+	"git.openAfterClone": "prompt",
+	"git.openDiffOnClick": true,
+	"git.openRepositoryInParentFolders": "prompt",
+	"git.optimisticUpdate": true,
+	"git.path": null,
+	"git.postCommitCommand": "none",
+	"git.promptToSaveFilesBeforeCommit": "always",
+	"git.promptToSaveFilesBeforeStash": "always",
+	"git.pruneOnFetch": false,
+	"git.pullBeforeCheckout": false,
+	"git.pullTags": true,
+	"git.rebaseWhenSync": false,
+	"git.rememberPostCommitCommand": false,
+	"git.replaceTagsWhenPull": false,
+	"git.repositoryScanIgnoredFolders": [],
+	"git.repositoryScanMaxDepth": 1,
+	"git.requireGitUserConfig": true,
+	"git.scanRepositories": [],
+	"git.showActionButton": {},
+	"git.showCommitInput": true,
+	"git.showInlineOpenFileAction": true,
+	"git.showProgress": true,
+	"git.showPushSuccessNotification": false,
+	"git.showReferenceDetails": true,
+	"git.similarityThreshold": 50,
+	"git.smartCommitChanges": "all",
+	"git.statusLimit": 10000,
+	"git.suggestSmartCommit": true,
+	"git.supportCancellation": false,
+	"git.terminalAuthentication": true,
+	"git.terminalGitEditor": false,
+	"git.timeline.date": "committed",
+	"git.timeline.showAuthor": true,
+	"git.timeline.showUncommitted": false,
+	"git.untrackedChanges": "mixed",
+	"git.useCommitInputAsStashMessage": false,
+	"git.useEditorAsCommitInput": true,
+	"git.useForcePushIfIncludes": true,
+	"git.useForcePushWithLease": true,
+	"git.useIntegratedAskPass": true,
+	"git.verboseCommit": false,
+	"git.worktreeIncludeFiles": [],
+	"github.branchProtection": true,
+	"github.gitAuthentication": true,
+	"github.gitProtocol": "https",
+	"github.showAvatar": true,
+	"github-authentication.preferDeviceCodeFlow": false,
+	"github-authentication.useElectronFetch": true,
+	"github-enterprise.uri": "",
+
+
+	//<========>PRETTIER<========>
+	//  For example: `{"vue-html": "html", "javascript": "javascriptreact"}`
+	"vue.autoInsert.bracketSpacing": true,
+	"vue.autoInsert.dotValue": false,
+	"vue.codeActions.askNewComponentName": true,
+	"vue.editor.focusMode": false,
+	"vue.editor.reactivityVisualization": true,
+	"vue.editor.templateInterpolationDecorators": true,
+	"vue.format.script.enabled": true,
+	"vue.format.script.initialIndent": false,
+	"vue.format.style.enabled": true,
+	"vue.format.style.initialIndent": false,
+	"vue.format.template.enabled": true,
+	"vue.format.template.initialIndent": true,
+	"vue.format.wrapAttributes": "auto",
+	"vue.hover.rich": false,
+	"vue.inlayHints.destructuredProps": false,
+	"vue.inlayHints.inlineHandlerLeading": false,
+	"vue.inlayHints.missingProps": false,
+	"vue.inlayHints.optionsWrapper": false,
+	"vue.inlayHints.vBindShorthand": false,
+	"vue.server.includeLanguages": [],
+	"vue.server.path": "",
+	"vue.suggest.componentNameCasing": "preferPascalCase",
+	"vue.suggest.defineAssignment": true,
+	"vue.suggest.propNameCasing": "preferKebabCase",
+	"vue.trace.server": "off",
+	//<========>PRETTIER<========>
+	"angular.enable-strict-mode-prompt": true,
+	"angular.forceStrictTemplates": false,
+	"angular.log": "off",
+	"angular.server.useClientSideFileWatcher": true,
+	"angular.suggest.autoImports": true,
+	"angular.suggest.includeAutomaticOptionalChainCompletions": true,
+	"angular.suggest.includeCompletionsWithSnippetText": true,
+	"angular.suppressAngularDiagnosticCodes": "",
+	"angular.trace.server": "off",
+	//<========>PRETTIER<========>
+	//  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
+	//  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
+	//  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
+	// ESLint
+	// The setting is deprecated. Use editor.codeActionsOnSave instead with a source.fixAll.eslint member.
+	"eslint.autoFixOnSave": false,
+	"eslint.codeAction.disableRuleComment": {},
+	"eslint.codeAction.showDocumentation": {},
+	"eslint.codeActionsOnSave.mode": "all",
+	// The ESLint options object to use on save (see https://eslint.org/docs/developer-guide/nodejs-api#eslint-class). `eslint.codeActionsOnSave.rules`, if specified, will take priority over any rule options here.
+	"eslint.codeActionsOnSave.options": {},
+	// The rules that should be executed when computing the code actions on save or formatting a file. Defaults to the rules configured via the ESLint configuration
+	"eslint.codeActionsOnSave.rules": null,
+	// Enables ESLint debug mode (same as `--debug` on the command line)
+	"eslint.debug": false,
+	// Controls whether eslint is enabled or not.
+	"eslint.enable": true,
+	"eslint.execArgv": null,
+	// Use ESLint version 8.57 or later and `eslint.useFlatConfig` instead.
+	// Enables support of experimental Flat Config (aka eslint.config.js). Requires ESLint version >= 8.21 < 8.57.0).
+	"eslint.experimental.useFlatConfig": false,
+	// Enables ESLint as a formatter.
+	"eslint.format.enable": false,
+	// If true, untitled files won't be validated by ESLint.
+	"eslint.ignoreUntitled": false,
+	// The command to run the task for linting the whole workspace. Defaults to the found eslint binary for the workspace, or 'eslint' if no binary could be found.
+	"eslint.lintTask.command": "eslint",
+	"eslint.lintTask.enable": false,
+	// Command line options applied when running the task for linting the whole workspace (see https://eslint.org/docs/user-guide/command-line-interface).
+	"eslint.lintTask.options": ".",
+	// Whether ESlint should migrate auto fix on save settings.
+	"eslint.migration.2_x": "on",
+	// The value of `NODE_ENV` to use when running eslint tasks.
+	"eslint.nodeEnv": null,
+	// A path added to `NODE_PATH` when resolving the eslint module.
+	"eslint.nodePath": null,
+	"eslint.notebooks.rules.customizations": [],
+	// Whether ESLint should issue a warning on ignored files.
+	"eslint.onIgnoredFiles": "off",
+	// The eslint options object to provide args normally passed to eslint when executed from a command line (see https://eslint.org/docs/developer-guide/nodejs-api#eslint-class).
+	"eslint.options": {},
+	"eslint.packageManager": "npm",
+	"eslint.probe": [],
+	"eslint.problems.shortenToSingleLine": false,
+	// This option is deprecated. Use eslint.lintTask.enable instead.
+	"eslint.provideLintTask": false,
+	"eslint.quiet": false,
+	// Override the severity of one or more rules reported by this extension, regardless of the project's ESLint config. Use globs to apply default severities for multiple rules.
+	"eslint.rules.customizations": [],
+	"eslint.run": "onType",
+	// The location of the node binary to run ESLint under.
+	"eslint.runtime": null,
+	"eslint.timeBudget.onFixes": {},
+	"eslint.timeBudget.onValidation": {},
+	// Traces the communication between VSCode and the eslint linter service.
+	"eslint.trace.server": "off",
+	// Since version 7 ESLint offers a new API call ESLint. Use it even if the old CLIEngine is available. From version 8 on forward on ESLint class is available.
+	"eslint.useESLintClass": false,
+	// Controls whether flat config should be used or not. This setting requires ESLint version 8.57 or later and is interpreted according to the [ESLint Flat Config rollout plan](https://eslint.org/blog/2023/10/flat-config-rollout-plans/). This means:
+	//  - *8.57.0 <= ESLint version < 9.x*: setting is honored and defaults to false
+	// - *9.0.0 <= ESLint version < 10.x*: settings is honored and defaults to true
+	// - *10.0.0 <= ESLint version*: setting is ignored. Flat configs are the default and can't be turned off.
+	"eslint.useFlatConfig": null,
+	// Whether ESLint should use real paths when resolving files. This is useful when working with symlinks or when the casing of file paths is inconsistent.
+	"eslint.useRealpaths": false,
+	// An array of language ids which should be validated by ESLint. If not installed ESLint will show an error.
+	"eslint.validate": null,
+	// Specifies how the working directories ESLint is using are computed. ESLint resolves configuration files (e.g. `eslintrc`, `.eslintignore`) relative to a working directory so it is important to configure this correctly.
+	"eslint.workingDirectories": [],
+	//<========>PRETTIER<========>
+	"prettier.arrowParens": "always",
+	"prettier.bracketSameLine": false,
+	"prettier.bracketSpacing": true,
+	"prettier.configPath": "",
+	"prettier.disableLanguages": [],
+	"prettier.documentSelectors": [],
+	"prettier.embeddedLanguageFormatting": "auto",
+	"prettier.enable": true,
+	"prettier.enableDebugLogs": false,
+	"prettier.endOfLine": "lf",
+	"prettier.experimentalOperatorPosition": "end",
+	"prettier.experimentalTernaries": false,
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.ignorePath": ".prettierignore",
+	"prettier.insertPragma": false,
+	"prettier.jsxBracketSameLine": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.objectWrap": "preserve",
+	"prettier.packageManager": "npm",
+	"prettier.prettierPath": "",
+	"prettier.printWidth": 80,
+	"prettier.proseWrap": "preserve",
+	"prettier.quoteProps": "as-needed",
+	"prettier.requireConfig": false,
+	"prettier.requirePragma": false,
+	"prettier.resolveGlobalModules": false,
+	"prettier.semi": true,
+	"prettier.singleAttributePerLine": false,
+	"prettier.singleQuote": false,
+	"prettier.tabWidth": 2,
+	"prettier.trailingComma": "all",
+	"prettier.useEditorConfig": true,
+	"prettier.useTabs": false,
+	"prettier.vueIndentScriptAndStyle": false,
+	"prettier.withNodeModules": false,
+	//<========>IMPORT COST<========>
+	"importCost.bundleSizeColoring": "minified",
+	"importCost.bundleSizeDecoration": "both",
+	"importCost.debug": false,
+	"importCost.fontStyle": "normal",
+	"importCost.javascriptExtensions": [],
+	"importCost.largePackageDarkColor": "#d44e40",
+	"importCost.largePackageLightColor": "#d44e40",
+	"importCost.margin": 1,
+	"importCost.mediumPackageDarkColor": "#7cc36e",
+	"importCost.mediumPackageLightColor": "#7cc36e",
+	"importCost.mediumPackageSize": 100,
+	"importCost.showCalculatingDecoration": true,
+	"importCost.smallPackageDarkColor": "#7cc36e",
+	"importCost.smallPackageLightColor": "#7cc36e",
+	"importCost.smallPackageSize": 50,
+	"importCost.svelteExtensions": [],
+	"importCost.timeout": 20000,
+	"importCost.typescriptExtensions": [],
+	"importCost.vueExtensions": [],
+	//<========>EDITOR CONFIG<========>
+	"editorconfig.generateAuto": true,
+	"editorconfig.showMenuEntry": true,
+	"editorconfig.template": "default",
+	//<========>DOTENV CONFIG<========>
+	"dotenv.cloakColor": "#000000",
+	"dotenv.cloakIcon": "█",
+	"dotenv.enableAutocloaking": true,
+	"dotenv.enableSecretpeeking": true,
+	//<========>BACKGROUND<========>
+	"background.backgroundBlur": [
+		"0",
+		"2px",
+		"0",
+		"0"
+	],
+	"background.backgroundOpacity": [
+		0.1,
+		0.16,
+		0.1,
+		0.1
+	],
+	"background.editorBackgrounds": [
+		"C:/Visuals/VisualStudioCode/9921de42ede13832ff5b845c71db8b44.gif"
+	],
+	"intelliphp.inlineSuggestionsEnabled": true,
 
 
 
@@ -2592,17 +3524,6 @@
 
 
 
-
-
-
-
-
-
-
-	"dotenv.enableAutocloaking": false,
-	"accessibility.signals.terminalBell": {
-		"sound": "off"
-	},
 
 
 }
