@@ -1,9 +1,19 @@
 {
-	/* 
+	/*
 		AUTHOR  : Murad Gazymagomedov (quantferox)
 		VERSION : 0.6 (Release)
 		DATE    : 06.06.2026
 	*/
+	//<================>ACCESSIBILITY<================>
+	"accessibility.signals.terminalBell": {
+		"sound": "off"
+	},
+	//<================>BREADCRUMBS<================>
+	"breadcrumbs.enabled": false,
+
+
+
+
 	//<================>WINDOWS<================>
 	"window.autoDetectHighContrast": false,
 	"window.confirmBeforeClose": "keyboardOnly",
@@ -45,80 +55,169 @@
 		"*.embeddedhtml": "html",
 		".env*": "dotenv"
 	},
-	"files.autoGuessEncoding": false,
-	"files.autoSave": "off",
-	"files.autoSaveDelay": 1000,
-	"files.autoSaveWhenNoErrors": false,
-	"files.autoSaveWorkspaceFilesOnly": false,
-	"files.candidateGuessEncodings": [],
-	"files.defaultLanguage": "",
-	"files.dialog.defaultPath": "",
-	"files.enableTrash": true,
-	"files.encoding": "utf8",
-	"files.eol": "auto",
-	"files.exclude": {},
-	"files.hotExit": "onExit",
-	"files.insertFinalNewline": false,
-	"files.participants.timeout": 60000,
-	"files.readonlyExclude": {},
-	"files.readonlyFromPermissions": false,
-	"files.readonlyInclude": {},
-	"files.restoreUndoStack": true,
-	"files.saveConflictResolution": "askUser",
-	"files.simpleDialog.enable": false,
-	"files.trimFinalNewlines": false,
-	"files.trimTrailingWhitespace": false,
-	"files.trimTrailingWhitespaceInRegexAndStrings": true,
-	"files.watcherExclude": {},
-	"files.watcherInclude": [],
-	"files.refactoring.autoSave": true,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	//<================>EXPLORER<================>
+	"explorer.compactFolders": false,
 	//<================>EDITOR<================>
-	"explorer.autoOpenDroppedFile": true,
-	"explorer.autoReveal": true,
-	"explorer.autoRevealExclude": {},
-	"explorer.compactFolders": true,
-	"explorer.confirmDelete": true,
-	"explorer.confirmDragAndDrop": true,
-	"explorer.confirmPasteNative": true,
-	"explorer.confirmUndo": "default",
-	"explorer.copyPathSeparator": "auto",
-	"explorer.copyRelativePathSeparator": "auto",
-	"explorer.decorations.badges": true,
-	"explorer.decorations.colors": true,
-	"explorer.enableDragAndDrop": true,
-	"explorer.enableUndo": true,
-	"explorer.excludeGitIgnore": false,
-	"explorer.expandSingleFolderWorkspaces": true,
-	"explorer.fileNesting.enabled": false,
-	"explorer.fileNesting.expand": true,
-	"explorer.fileNesting.patterns": {},
-	"explorer.incrementalNaming": "simple",
-	"explorer.openEditors.minVisible": 0,
-	"explorer.openEditors.sortOrder": "editorOrder",
-	"explorer.openEditors.visible": 9,
-	"explorer.sortOrder": "default",
-	"explorer.sortOrderLexicographicOptions": "default",
-	"explorer.sortOrderReverse": false,
-	//<================>EDITOR<================>
-	"accessibility.signals.terminalBell": {
-		"sound": "off"
-	},
+	"chat.agent.sandbox.advanced.runtime": {},
+	"chat.agent.sandbox.allowAutoApprove": true,
+	"chat.agent.sandbox.allowUnsandboxedCommands": true,
+	"chat.agent.sandbox.autoApproveUnsandboxedCommands": false,
+	"chat.agent.sandbox.enabled": "off",
+	"chat.agent.sandbox.enabledWindows": "off",
+	"chat.agent.sandbox.fileSystem.linux": {},
+	"chat.agent.sandbox.fileSystem.mac": {},
+    "chat.agent.sandbox.fileSystem.windows": {},
+	"chat.agent.terminal.allowList": null,
+	"chat.agent.terminal.autoApprove": null,
+	"chat.agent.terminal.denyList": null,
+	"chat.tools.terminal.autoApprove": {},
+	"chat.tools.terminal.autoApproveWorkspaceNpmScripts": true,
+	"chat.tools.terminal.backgroundNotifications": true,
+	"chat.tools.terminal.blockDetectedFileWrites": "outsideWorkspace",
+	"chat.tools.terminal.enableAutoApprove": true,
+	"chat.tools.terminal.enforceTimeoutFromModel": true,
+	"chat.tools.terminal.idlePollInterval": 1000,
+	"chat.tools.terminal.idleSilenceTimeoutMs": 60000,
+	"chat.tools.terminal.ignoreDefaultAutoApproveRules": false,
+	"chat.tools.terminal.outputDeltas": false,
+	"chat.tools.terminal.outputLocation": "chat",
+	"chat.tools.terminal.preventShellHistory": true,
+	"chat.tools.terminal.shellIntegrationTimeout": -1,
+	"chat.tools.terminal.terminalProfile.linux": null,
+	"chat.tools.terminal.terminalProfile.osx": null,
+	"chat.tools.terminal.terminalProfile.windows": null,
+	"chat.agent.allowedNetworkDomains": [],
+	"chat.agent.codeBlockProgress": true,
+	"chat.agent.deniedNetworkDomains": [],
+	"chat.agent.enabled": true,
+	"chat.agent.maxRequests": 50,
+    "chat.agent.networkFilter": false,
+	"chat.agent.thinking.collapsedTools": "always",
+	"chat.agent.thinking.generateTitles": true,
+	"chat.agent.thinking.phrases": {},
+	"chat.agent.thinking.terminalTools": true,
+	"chat.agent.thinkingStyle": "fixedScrolling",
+	"chat.agentFilesLocations": {},
+	"chat.agentHost.ahpJsonlLoggingEnabled": false,
+	"chat.agentHost.clientTools": [],
+	"chat.agentHost.customTerminalTool.enabled": false,
+	"chat.agentHost.enabled": false,
+	"chat.agentHost.ipcLoggingEnabled": false,
+	"chat.agentHost.otel.captureContent": false,
+	"chat.agentHost.otel.dbSpanExporter.enabled": false,
+	"chat.agentHost.otel.enabled": false,
+	"chat.agentHost.otel.exporterType": "otlp-http",
+	"chat.agentHost.otel.otlpEndpoint": "",
+	"chat.agentHost.otel.outfile": "",
+	"chat.agentsControl.enabled": "compact",
+	"chat.agentSessionProjection.enabled": false,
+	"chat.agentSkillsLocations": {},
+	"chat.artifacts.enabled": false,
+	"chat.artifacts.rules.byFilePath": {},
+	"chat.artifacts.rules.byMemoryFilePath": {},
+	"chat.artifacts.rules.byMimeType": {},
+	"chat.autopilot.enabled": true,
+	"chat.autoReply": false,
+	"chat.checkpoints.enabled": true,
+	"chat.checkpoints.showFileChanges": false,
+	"chat.contextUsage.enabled": true,
+	"chat.customizations.harnessSelector.enabled": true,
+	"chat.customizations.structuredPreview.enabled": false,
+	"chat.detectParticipant.enabled": true,
+	"chat.disableAIFeatures": false,
+	"chat.editing.autoAcceptDelay": 0,
+	"chat.editing.confirmEditRequestRemoval": true,
+	"chat.editing.confirmEditRequestRetry": true,
+	"chat.editing.explainChanges.enabled": false,
+	"chat.editing.revealNextChangeOnResolve": true,
+	"chat.editMode.hidden": true,
+	"chat.editor.fontFamily": "default",
+	"chat.editor.fontSize": 14,
+	"chat.editor.fontWeight": "default",
+	"chat.editor.lineHeight": 0,
+	"chat.editor.wordWrap": "off",
+	"chat.editorAssociations": {},
+	"chat.editRequests": "inline",
+    "chat.exitAfterDelegation": false,
+	"chat.experimental.incrementalRendering.animationStyle": "fade",
+	"chat.experimental.incrementalRendering.buffering": "word",
+	"chat.experimental.incrementalRendering.enabled": false,
+	"chat.experimental.useSkillAdherencePrompt": false,
+	"chat.experimentalSessionsWindowOverride": false,
+	"chat.exploreAgent.defaultModel": "",
+	"chat.extensionTools.enabled": true,
+	"chat.extensionUnification.enabled": true,
+	"chat.fontFamily": "default",
+	"chat.fontSize": 13,
+	"chat.generalPurposeAgent.enabled": false,
+	"chat.growthNotification.enabled": false,
+	"chat.hookFilesLocations": {},
+	"chat.implicitContext.enabled": {},
+	"chat.implicitContext.suggestedContext": true,
+	"chat.includeApplyingInstructions": true,
+	"chat.includeReferencedInstructions": false,
+	"chat.inlineReferences.style": "box",
+	"chat.instructionsFilesLocations": {},
+	"chat.math.enabled": true,
+	"chat.mcp.access": "all",
+	"chat.mcp.apps.enabled": true,
+	"chat.mcp.assisted.nuget.enabled": false,
+	"chat.mcp.autostart": "newAndOutdated",
+	"chat.mcp.collisionBehavior": "disable",
+	"chat.mcp.discovery.enabled": {},
+	"chat.mcp.gallery.enabled": false,
+	"chat.mcp.serverSampling": {},
+	"chat.modeFilesLocations": {},
+	"chat.newSession.defaultMode": "",
+	"chat.notifyWindowOnConfirmation": "windowNotFocused",
+	"chat.notifyWindowOnResponseReceived": "windowNotFocused",
+	"chat.permissions.default": "default",
+	"chat.persistentProgress.enabled": false,
+	"chat.planAgent.defaultModel": "",
+	"chat.planReview.inlineEditor.enabled": true,
+	"chat.pluginLocations": {},
+	"chat.plugins.enabled": true,
+	"chat.plugins.marketplaces": [],
+	"chat.progressBorder.enabled": true,
+	"chat.promptFilesLocations": {},
+	"chat.promptFilesRecommendations": {},
+	"chat.requestQueuing.defaultAction": "steer",
+	"chat.restoreLastPanelSession": false,
+	"chat.sendElementsToChat.attachImages": true,
+	"chat.sessionSync.enabled": false,
+	"chat.sessionSync.excludeRepositories": [],
+	"chat.subagents.allowInvocationsFromSubagents": false,
+	"chat.tips.enabled": true,
+	"chat.titleBar.signIn.enabled": true,
+	"chat.tools.autoExpandFailures": true,
+	"chat.tools.compressOutput.enabled": false,
+	"chat.tools.confirmationCarousel.enabled": false,
+	"chat.tools.edits.autoApprove": {},
+	"chat.tools.eligibleForAutoApproval": {},
+	"chat.tools.global.autoApprove": false,
+	"chat.tools.riskAssessment.enabled": true,
+	"chat.tools.riskAssessment.model": "copilot-utility-small",
+	"chat.tools.terminal.simpleCollapsible": true,
+	"chat.tools.todos.showWidget": true,
+	"chat.tools.urls.autoApprove": {},
+	"chat.undoRequests.restoreInput": true,
+	"chat.unifiedAgentsBar.enabled": false,
+	"chat.upvoteAnimation": "floatingThumbs",
+	"chat.useAgentSkills": true,
+	"chat.useAgentsMdFile": true,
+	"chat.useClaudeHooks": false,
+	"chat.useClaudeMdFile": true,
+	"chat.useCustomizationsInParentRepositories": false,
+	"chat.useHooks": true,
+	"chat.useNestedAgentsMdFiles": false,
+	"chat.utilityModel": "",
+	"chat.utilitySmallModel": "",
+	"chat.viewProgressBadge.enabled": false,
+	"chat.viewSessions.enabled": true,
+	"chat.viewSessions.orientation": "sideBySide",
 	//<================>EDITOR<================>
 	"editor.cursorBlinking": "phase",
 	"editor.cursorSmoothCaretAnimation": "on",
@@ -133,63 +232,14 @@
 	"editor.fontSize": 12,
 	"editor.fontWeight": "normal",
 	"editor.formatOnSave": true,
+	"editor.glyphMargin": true,
 
 
 
 
-	"editor.glyphMargin": false, //*
 
 
 
-
-	// Alternative command id that is being executed when the result of 'Go to Declaration' is the current location.
-	"editor.gotoLocation.alternativeDeclarationCommand": "editor.action.goToReferences",
-	// Alternative command id that is being executed when the result of 'Go to Definition' is the current location.
-	"editor.gotoLocation.alternativeDefinitionCommand": "editor.action.goToReferences",
-	// Alternative command id that is being executed when the result of 'Go to Implementation' is the current location.
-	"editor.gotoLocation.alternativeImplementationCommand": "",
-	// Alternative command id that is being executed when the result of 'Go to Reference' is the current location.
-	"editor.gotoLocation.alternativeReferenceCommand": "",
-	// Alternative command id that is being executed when the result of 'Go to Type Definition' is the current location.
-	"editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.goToReferences",
-	// This setting is deprecated, please use separate settings like 'editor.editor.gotoLocation.multipleDefinitions' or 'editor.editor.gotoLocation.multipleImplementations' instead.
-	// 
-	"editor.gotoLocation.multiple": null,
-	// Controls the behavior the 'Go to Declaration'-command when multiple target locations exist.
-	//  - peek: Show Peek view of the results (default)
-	//  - gotoAndPeek: Go to the primary result and show a Peek view
-	//  - goto: Go to the primary result and enable Peek-less navigation to others
-	"editor.gotoLocation.multipleDeclarations": "peek",
-	// Controls the behavior the 'Go to Definition'-command when multiple target locations exist.
-	//  - peek: Show Peek view of the results (default)
-	//  - gotoAndPeek: Go to the primary result and show a Peek view
-	//  - goto: Go to the primary result and enable Peek-less navigation to others
-	"editor.gotoLocation.multipleDefinitions": "peek",
-	// Controls the behavior the 'Go to Implementations'-command when multiple target locations exist.
-	//  - peek: Show Peek view of the results (default)
-	//  - gotoAndPeek: Go to the primary result and show a Peek view
-	//  - goto: Go to the primary result and enable Peek-less navigation to others
-	"editor.gotoLocation.multipleImplementations": "peek",
-	// Controls the behavior the 'Go to References'-command when multiple target locations exist.
-	//  - peek: Show Peek view of the results (default)
-	//  - gotoAndPeek: Go to the primary result and show a Peek view
-	//  - goto: Go to the primary result and enable Peek-less navigation to others
-	"editor.gotoLocation.multipleReferences": "peek",
-	// Controls the behavior the 'Go to Type Definition'-command when multiple target locations exist.
-	//  - peek: Show Peek view of the results (default)
-	//  - gotoAndPeek: Go to the primary result and show a Peek view
-	//  - goto: Go to the primary result and enable Peek-less navigation to others
-	"editor.gotoLocation.multipleTypeDefinitions": "peek",
-	"editor.guides.bracketPairs": "active",
-	"editor.guides.bracketPairsHorizontal": true,
-	"editor.guides.highlightActiveBracketPair": true,
-	"editor.guides.highlightActiveIndentation": true,
-	"editor.guides.indentation": true,
-	"editor.hideCursorInOverviewRuler": false,
-	"editor.hover.showLongLineWarning": true,
-	"editor.hover.sticky": true,
-	"editor.indentSize": "tabSize",
-	"editor.inertialScroll": false,
 	"editor.inlayHints.enabled": "on",
 	"editor.inlayHints.fontFamily": "",
 	"editor.inlayHints.fontSize": 0,
@@ -202,6 +252,16 @@
 	"editor.inlineSuggest.edits.showLongDistanceHint": true,
 	"editor.inlineSuggest.enabled": true,
 	"editor.inlineSuggest.experimental.emptyResponseInformation": true,
+
+
+
+
+
+
+
+
+
+
 	// Controls whether to show inline suggestions when there is a suggest conflict.
 	"editor.inlineSuggest.experimental.showOnSuggestConflict": "never",
 	// Suppresses inline completions for specified extension IDs -- comma separated.
@@ -238,7 +298,7 @@
 	//  - onCode: Show the code action menu when the cursor is on lines with code.
 	//  - on: Show the code action menu when the cursor is on lines with code or on empty lines.
 	"editor.lightbulb.enabled": "onCode",
-	// Controls the line height. 
+	// Controls the line height.
 	//  - Use 0 to automatically compute the line height from the font size.
 	//  - Values between 0 and 8 will be used as a multiplier with the font size.
 	//  - Values greater than or equal to 8 will be used as effective values.
@@ -300,28 +360,12 @@
 
 
 
-	
-	"editor.mouseMiddleClickAction": "default",
-	// A multiplier to be used on the `deltaX` and `deltaY` of mouse wheel scroll events.
-	"editor.mouseWheelScrollSensitivity": 1,
-	// Zoom the font of the editor when using mouse wheel and holding `Ctrl`.
-	"editor.mouseWheelZoom": false,
-	// Controls the max number of cursors that can be in an active editor at once.
-	"editor.multiCursorLimit": 10000,
-	// Merge multiple cursors when they are overlapping.
-	"editor.multiCursorMergeOverlapping": true,
-	// The modifier to be used to add multiple cursors with the mouse. The Go to Definition and Open Link mouse gestures will adapt such that they do not conflict with the [multicursor modifier](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier).
-	//  - ctrlCmd: Maps to `Control` on Windows and Linux and to `Command` on macOS.
-	//  - alt: Maps to `Alt` on Windows and Linux and to `Option` on macOS.
-	"editor.multiCursorModifier": "alt",
-	// Controls pasting when the line count of the pasted text matches the cursor count.
-	//  - spread: Each cursor pastes a single line of the text.
-	//  - full: Each cursor pastes the full text.
-	"editor.multiCursorPaste": "spread",
-	// Controls whether occurrences should be highlighted across open files.
-	//  - off: Does not highlight occurrences.
-	//  - singleFile: Highlights occurrences only in the current file.
-	//  - multiFile: Experimental: Highlights occurrences across all valid open files.
+
+
+
+
+
+
 	"editor.occurrencesHighlight": "singleFile",
 	// Controls the delay in milliseconds after which occurrences are highlighted.
 	"editor.occurrencesHighlightDelay": 0,
@@ -342,7 +386,7 @@
 	// Controls whether you can paste content in different ways.
 	"editor.pasteAs.enabled": true,
 	// Configures the preferred type of edit to use when pasting content.
-	// 
+	//
 	// This is an ordered list of edit kinds. The first available edit of a preferred kind will be used.
 	"editor.pasteAs.preferences": [],
 	// Controls if a widget is shown when pasting content in to the editor. This widget lets you control how the file is pasted.
@@ -387,9 +431,32 @@
 	"editor.renderWhitespace": "selection",
 	// Controls whether selections should have rounded corners.
 	"editor.roundedSelection": true,
-	// Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty.
-	"editor.rulers": [],
-	// Control whether inline suggestions are announced by a screen reader.
+
+
+
+
+
+
+
+	"editor.rulers": [
+		{
+			"column": 80,
+			"color": "#00FF0016"
+		},
+		{
+			"column": 100,
+			"color": "#FFA50032"
+		},
+		{
+			"column": 120,
+			"color": "#FF000064"
+		}
+	],
+
+
+
+
+
 	"editor.screenReaderAnnounceInlineSuggestion": true,
 	// Controls the visibility of the horizontal scrollbar.
 	//  - auto: The horizontal scrollbar will be visible only when necessary.
@@ -441,9 +508,22 @@
 	"editor.smartSelect.selectLeadingAndTrailingWhitespace": true,
 	// Whether subwords (like 'foo' in 'fooBar' or 'foo_bar') should be selected.
 	"editor.smartSelect.selectSubwords": true,
-	// Controls whether the editor will scroll using an animation.
-	"editor.smoothScrolling": false,
-	// Controls if surround-with-snippets or file template snippets show as Code Actions.
+
+
+
+
+
+
+
+	"editor.smoothScrolling": true,
+
+
+
+
+
+
+
+
 	"editor.snippets.codeActions.enabled": true,
 	// Controls whether snippets are shown with other suggestions and how they are sorted.
 	//  - top: Show snippet suggestions on top of other suggestions.
@@ -453,17 +533,17 @@
 	"editor.snippetSuggestions": "inline",
 	// Keep peek editors open even when double-clicking their content or when hitting `Escape`.
 	"editor.stablePeek": false,
-	// Defines the model to use for determining which lines to stick. If the outline model does not exist, it will fall back on the folding provider model which falls back on the indentation model. This order is respected in all three cases.
-	"editor.stickyScroll.defaultModel": "outlineModel",
-	// Shows the nested current scopes during the scroll at the top of the editor.
-	"editor.stickyScroll.enabled": true,
-	// Defines the maximum number of sticky lines to show.
-	"editor.stickyScroll.maxLineCount": 5,
-	// Enable scrolling of Sticky Scroll with the editor's horizontal scrollbar.
-	"editor.stickyScroll.scrollWithEditor": true,
-	// Emulate selection behavior of tab characters when using spaces for indentation. Selection will stick to tab stops.
-	"editor.stickyTabStops": false,
-	// Controls whether filtering and sorting suggestions accounts for small typos.
+
+
+
+
+	"editor.stickyScroll.enabled": false,
+
+
+
+
+
+
 	"editor.suggest.filterGraceful": true,
 	// Controls whether words are overwritten when accepting completions. Note that this depends on extensions opting into this feature.
 	//  - insert: Insert suggestion without overwriting text right of the cursor.
@@ -474,7 +554,7 @@
 	// When enabled IntelliSense filtering requires that the first character matches on a word start. For example, `c` on `Console` or `WebContext` but _not_ on `description`. When disabled IntelliSense will show more results but still sorts them by match quality.
 	"editor.suggest.matchOnWordStartOnly": true,
 	// This setting is deprecated. The suggest widget can now be resized.
-	// 
+	//
 	"editor.suggest.maxVisibleSuggestions": 0,
 	// Controls whether to preview the suggestion outcome in the editor.
 	"editor.suggest.preview": false,
@@ -626,7 +706,7 @@
 	// Controls the wrapping column of the editor when `editor.wordWrap` is `wordWrapColumn` or `bounded`.
 	"editor.wordWrapColumn": 80,
 	// Controls whether literal `\n` shall trigger a wordWrap when `editor.wordWrap` is enabled.
-	// 
+	//
 	// For example:
 	// ```c
 	// char* str="hello\nworld"
@@ -656,53 +736,29 @@
 	"editor.semanticTokenColorCustomizations": {},
 	// Overrides editor syntax colors and font style from the currently selected color theme.
 	"editor.tokenColorCustomizations": {
-		"textMateRules": []
+		"textMateRules": [
+			{
+				"scope": "keyword.other.dotenv",
+				"settings": {
+					"foreground": "#FF000000"
+				}
+			}
+		]
 	},
 
-	"breadcrumbs.enabled": false,
+
 	//<================>TERMINAL<================>
-	
-
-	// External Terminal
-	// When opening a file from the Explorer in a terminal, determines what kind of terminal will be launched
-	//  - integrated: Show the integrated terminal action.
-	//  - external: Show the external terminal action.
-	//  - both: Show both integrated and external terminal actions.
 	"terminal.explorerKind": "integrated",
-
-	// Customizes which terminal to run on Linux.
 	"terminal.external.linuxExec": "xterm",
-
-	// Customizes which terminal application to run on macOS.
 	"terminal.external.osxExec": "Terminal.app",
-
-	// Customizes which terminal to run on Windows.
 	"terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
-
-	// When opening a repository from the Source Control Repositories view in a terminal, determines what kind of terminal will be launched
-	//  - integrated: Show the integrated terminal action.
-	//  - external: Show the external terminal action.
-	//  - both: Show both integrated and external terminal actions.
 	"terminal.sourceControlRepositoriesKind": "integrated",
-// Focus the terminal accessible view when a command is executed.
 	"terminal.integrated.accessibleViewFocusOnCommandExecution": false,
-
-	// Preserve the cursor position on reopen of the terminal's accessible view rather than setting it to the bottom of the buffer.
 	"terminal.integrated.accessibleViewPreserveCursorPosition": false,
-
-	// The terminal profile to use on Linux for agent host terminals, including shells launched by AI agent tools. Accepts either a profile name from `terminal.integrated.profiles.linux` or an inline profile object. When unset, falls back to `terminal.integrated.defaultProfile.linux`. Currently applies to the local agent host. Only the executable `path` is honored today; `args` and `env` from the profile are ignored. Remote agent hosts need remote-side shell configuration because local resolved paths may be invalid on the remote.
 	"terminal.integrated.agentHostProfile.linux": null,
-
-	// The terminal profile to use on macOS for agent host terminals, including shells launched by AI agent tools. Accepts either a profile name from `terminal.integrated.profiles.osx` or an inline profile object. When unset, falls back to `terminal.integrated.defaultProfile.osx`. Currently applies to the local agent host. Only the executable `path` is honored today; `args` and `env` from the profile are ignored. Remote agent hosts need remote-side shell configuration because local resolved paths may be invalid on the remote.
 	"terminal.integrated.agentHostProfile.osx": null,
-
-	// The terminal profile to use on Windows for agent host terminals, including shells launched by AI agent tools. Accepts either a profile name from `terminal.integrated.profiles.windows` or an inline profile object. When unset, falls back to `terminal.integrated.defaultProfile.windows`. Currently applies to the local agent host. Only the executable `path` is honored today; `args` and `env` from the profile are ignored. Remote agent hosts need remote-side shell configuration because local resolved paths may be invalid on the remote.
 	"terminal.integrated.agentHostProfile.windows": null,
-
-	// Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `terminal.integrated.commandsToSkipShell`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).
 	"terminal.integrated.allowChords": true,
-
-	// An array of strings containing the URI schemes that the terminal is allowed to open links for. By default, only a small subset of possible schemes are allowed for security reasons.
 	"terminal.integrated.allowedLinkSchemes": [
 		"file",
 		"http",
@@ -711,343 +767,39 @@
 		"vscode",
 		"vscode-insiders"
 	],
-
-	// Controls whether terminals can be created in an untrusted workspace.
-	// 
-	// **This feature bypasses a security protection that prevents terminals from launching in untrusted workspaces. The reason this is a security risk is because shells are often set up to potentially execute code automatically based on the contents of the current working directory. This should be safe to use provided your shell is set up in such a way that code execution in the folder never happens.**
 	"terminal.integrated.allowInUntrustedWorkspace": false,
-
-	// Whether to allow menubar mnemonics (for example Alt+F) to trigger the open of the menubar. Note that this will cause all alt keystrokes to skip the shell when true. This does nothing on macOS.
 	"terminal.integrated.allowMnemonics": false,
-
-	// If enabled, alt/option + click will reposition the prompt cursor to underneath the mouse when `editor.multiCursorModifier` is set to `'alt'` (the default value). This may not work reliably depending on your shell.
 	"terminal.integrated.altClickMovesCursor": true,
-
-	// The terminal profile to use on Linux for automation-related terminal usage like tasks and debug.
 	"terminal.integrated.automationProfile.linux": null,
-
-	// The terminal profile to use on macOS for automation-related terminal usage like tasks and debug.
 	"terminal.integrated.automationProfile.osx": null,
-
-	// The terminal profile to use for automation-related terminal usage like tasks and debug. This setting will currently be ignored if `terminal.integrated.automationShell.windows` (now deprecated) is set.
 	"terminal.integrated.automationProfile.windows": null,
-
-	// A set of messages that, when encountered in the terminal, will be automatically responded to. Provided the message is specific enough, this can help automate away common responses.
-	// 
-	// Remarks:
-	// 
-	// - Use `"Terminate batch job (Y/N)": "Y\r"` to automatically respond to the terminate batch job prompt on Windows.
-	// - The message includes escape sequences so the reply might not happen with styled text.
-	// - Each reply can only happen once every second.
-	// - Use `"\r"` in the reply to mean the enter key.
-	// - To unset a default key, set the value to null.
-	// - Restart VS Code if new don't apply.
 	"terminal.integrated.autoReplies": {},
-
-	// The number of milliseconds to show the bell within a terminal tab when triggered.
 	"terminal.integrated.bellDuration": 1000,
-
-	// A set of command IDs whose keybindings will not be sent to the shell but instead always be handled by VS Code. This allows keybindings that would normally be consumed by the shell to act instead the same as when the terminal is not focused, for example `Ctrl+P` to launch Quick Open.
-	// 
-	// &nbsp;
-	// 
-	// Many commands are skipped by default. To override a default and pass that command's keybinding to the shell instead, add the command prefixed with the `-` character. For example add `-workbench.action.quickOpen` to allow `Ctrl+P` to reach the shell.
-	// 
-	// &nbsp;
-	// 
-	// The following list of default skipped commands is truncated when viewed in Settings Editor. To see the full list, [open the default settings JSON](command:workbench.action.openRawDefaultSettings 'Open Default Settings (JSON)') and search for the first command from the list below.
-	// 
-	// &nbsp;
-	// 
-	// Default Skipped Commands:
-	// 
-	// - editor.action.accessibilityHelp
-	// - editor.action.toggleTabFocusMode
-	// - notification.acceptPrimaryAction
-	// - notifications.hideList
-	// - notifications.hideToasts
-	// - runCommands
-	// - workbench.action.closeQuickOpen
-	// - workbench.action.debug.continue
-	// - workbench.action.debug.disconnect
-	// - workbench.action.debug.pause
-	// - workbench.action.debug.restart
-	// - workbench.action.debug.run
-	// - workbench.action.debug.start
-	// - workbench.action.debug.stepInto
-	// - workbench.action.debug.stepOut
-	// - workbench.action.debug.stepOver
-	// - workbench.action.debug.stop
-	// - workbench.action.firstEditorInGroup
-	// - workbench.action.focusActiveEditorGroup
-	// - workbench.action.focusEighthEditorGroup
-	// - workbench.action.focusFifthEditorGroup
-	// - workbench.action.focusFirstEditorGroup
-	// - workbench.action.focusFourthEditorGroup
-	// - workbench.action.focusLastEditorGroup
-	// - workbench.action.focusNextPart
-	// - workbench.action.focusPreviousPart
-	// - workbench.action.focusSecondEditorGroup
-	// - workbench.action.focusSeventhEditorGroup
-	// - workbench.action.focusSixthEditorGroup
-	// - workbench.action.focusThirdEditorGroup
-	// - workbench.action.lastEditorInGroup
-	// - workbench.action.navigateDown
-	// - workbench.action.navigateLeft
-	// - workbench.action.navigateRight
-	// - workbench.action.navigateUp
-	// - workbench.action.nextEditor
-	// - workbench.action.nextEditorInGroup
-	// - workbench.action.nextPanelView
-	// - workbench.action.nextSideBarView
-	// - workbench.action.openNextRecentlyUsedEditor
-	// - workbench.action.openNextRecentlyUsedEditorInGroup
-	// - workbench.action.openPreviousRecentlyUsedEditor
-	// - workbench.action.openPreviousRecentlyUsedEditorInGroup
-	// - workbench.action.previousEditor
-	// - workbench.action.previousEditorInGroup
-	// - workbench.action.previousPanelView
-	// - workbench.action.previousSideBarView
-	// - workbench.action.quickOpen
-	// - workbench.action.quickOpenLeastRecentlyUsedEditor
-	// - workbench.action.quickOpenLeastRecentlyUsedEditorInGroup
-	// - workbench.action.quickOpenPreviousEditor
-	// - workbench.action.quickOpenPreviousRecentlyUsedEditor
-	// - workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup
-	// - workbench.action.quickOpenView
-	// - workbench.action.showCommands
-	// - workbench.action.tasks.build
-	// - workbench.action.tasks.reRunTask
-	// - workbench.action.tasks.rerunForActiveTerminal
-	// - workbench.action.tasks.restartTask
-	// - workbench.action.tasks.runTask
-	// - workbench.action.tasks.showLog
-	// - workbench.action.tasks.showTasks
-	// - workbench.action.tasks.terminate
-	// - workbench.action.tasks.test
-	// - workbench.action.terminal.acceptSelectedSuggestion
-	// - workbench.action.terminal.acceptSelectedSuggestionEnter
-	// - workbench.action.terminal.chat.cancel
-	// - workbench.action.terminal.chat.close
-	// - workbench.action.terminal.chat.discard
-	// - workbench.action.terminal.chat.feedbackHelpful
-	// - workbench.action.terminal.chat.feedbackReportIssue
-	// - workbench.action.terminal.chat.feedbackUnhelpful
-	// - workbench.action.terminal.chat.insertCommand
-	// - workbench.action.terminal.chat.makeRequest
-	// - workbench.action.terminal.chat.runCommand
-	// - workbench.action.terminal.chat.start
-	// - workbench.action.terminal.chat.viewInChat
-	// - workbench.action.terminal.clear
-	// - workbench.action.terminal.clearSelection
-	// - workbench.action.terminal.copyAndClearSelection
-	// - workbench.action.terminal.copyLastCommand
-	// - workbench.action.terminal.copyLastCommandAndLastCommandOutput
-	// - workbench.action.terminal.copyLastCommandOutput
-	// - workbench.action.terminal.copySelection
-	// - workbench.action.terminal.copySelectionAsHtml
-	// - workbench.action.terminal.deleteToLineStart
-	// - workbench.action.terminal.deleteWordLeft
-	// - workbench.action.terminal.deleteWordRight
-	// - workbench.action.terminal.findNext
-	// - workbench.action.terminal.findPrevious
-	// - workbench.action.terminal.focus
-	// - workbench.action.terminal.focusAccessibleBuffer
-	// - workbench.action.terminal.focusAtIndex1
-	// - workbench.action.terminal.focusAtIndex2
-	// - workbench.action.terminal.focusAtIndex3
-	// - workbench.action.terminal.focusAtIndex4
-	// - workbench.action.terminal.focusAtIndex5
-	// - workbench.action.terminal.focusAtIndex6
-	// - workbench.action.terminal.focusAtIndex7
-	// - workbench.action.terminal.focusAtIndex8
-	// - workbench.action.terminal.focusAtIndex9
-	// - workbench.action.terminal.focusFind
-	// - workbench.action.terminal.focusHover
-	// - workbench.action.terminal.focusNext
-	// - workbench.action.terminal.focusNextPane
-	// - workbench.action.terminal.focusPrevious
-	// - workbench.action.terminal.focusPreviousPane
-	// - workbench.action.terminal.goToRecentDirectory
-	// - workbench.action.terminal.hideFind
-	// - workbench.action.terminal.hideSuggestWidget
-	// - workbench.action.terminal.kill
-	// - workbench.action.terminal.killEditor
-	// - workbench.action.terminal.moveToEditor
-	// - workbench.action.terminal.moveToLineEnd
-	// - workbench.action.terminal.moveToLineStart
-	// - workbench.action.terminal.moveToTerminalPanel
-	// - workbench.action.terminal.new
-	// - workbench.action.terminal.newInActiveWorkspace
-	// - workbench.action.terminal.newInNewWindow
-	// - workbench.action.terminal.paste
-	// - workbench.action.terminal.pastePwsh
-	// - workbench.action.terminal.pasteSelection
-	// - workbench.action.terminal.resizePaneDown
-	// - workbench.action.terminal.resizePaneLeft
-	// - workbench.action.terminal.resizePaneRight
-	// - workbench.action.terminal.resizePaneUp
-	// - workbench.action.terminal.runActiveFile
-	// - workbench.action.terminal.runRecentCommand
-	// - workbench.action.terminal.runSelectedText
-	// - workbench.action.terminal.scrollDown
-	// - workbench.action.terminal.scrollDownPage
-	// - workbench.action.terminal.scrollToBottom
-	// - workbench.action.terminal.scrollToNextCommand
-	// - workbench.action.terminal.scrollToPreviousCommand
-	// - workbench.action.terminal.scrollToTop
-	// - workbench.action.terminal.scrollUp
-	// - workbench.action.terminal.scrollUpPage
-	// - workbench.action.terminal.searchWorkspace
-	// - workbench.action.terminal.selectAll
-	// - workbench.action.terminal.selectNextPageSuggestion
-	// - workbench.action.terminal.selectNextSuggestion
-	// - workbench.action.terminal.selectPrevPageSuggestion
-	// - workbench.action.terminal.selectPrevSuggestion
-	// - workbench.action.terminal.selectToNextCommand
-	// - workbench.action.terminal.selectToNextLine
-	// - workbench.action.terminal.selectToPreviousCommand
-	// - workbench.action.terminal.selectToPreviousLine
-	// - workbench.action.terminal.sendSequence
-	// - workbench.action.terminal.sendSignal
-	// - workbench.action.terminal.sizeToContentWidth
-	// - workbench.action.terminal.split
-	// - workbench.action.terminal.splitInActiveWorkspace
-	// - workbench.action.terminal.stopVoice
-	// - workbench.action.terminal.suggestToggleDetails
-	// - workbench.action.terminal.suggestToggleDetailsFocus
-	// - workbench.action.terminal.toggleFindCaseSensitive
-	// - workbench.action.terminal.toggleFindRegex
-	// - workbench.action.terminal.toggleFindWholeWord
-	// - workbench.action.terminal.toggleTerminal
-	// - workbench.action.terminal.triggerSuggest
-	// - workbench.action.toggleFullScreen
-	// - workbench.action.toggleMaximizedPanel
-	// - workbench.action.togglePanel
-	// - workbench.action.zoomIn
-	// - workbench.action.zoomOut
-	// - workbench.action.zoomReset
 	"terminal.integrated.commandsToSkipShell": [],
-
-	// Controls whether to confirm when the window closes if there are active terminal sessions. Background terminals like those launched by some extensions will not trigger the confirmation.
-	//  - never: Never confirm.
-	//  - always: Always confirm if there are terminals.
-	//  - hasChildProcesses: Confirm if there are any terminals that have child processes.
 	"terminal.integrated.confirmOnExit": "never",
-
-	// Controls whether to confirm killing terminals when they have child processes. When set to editor, terminals in the editor area will be marked as changed when they have child processes. Note that child process detection may not work well for shells like Git Bash which don't run their processes as child processes of the shell. Background terminals like those launched by some extensions will not trigger the confirmation.
-	//  - never: Never confirm.
-	//  - editor: Confirm if the terminal is in the editor.
-	//  - panel: Confirm if the terminal is in the panel.
-	//  - always: Confirm if the terminal is either in the editor or panel.
 	"terminal.integrated.confirmOnKill": "editor",
-
-	// Controls whether text selected in the terminal will be copied to the clipboard.
 	"terminal.integrated.copyOnSelection": false,
-
-	// Controls whether the terminal cursor blinks.
 	"terminal.integrated.cursorBlinking": false,
-
-	// Controls the style of terminal cursor when the terminal is focused.
 	"terminal.integrated.cursorStyle": "block",
-
-	// Controls the style of terminal cursor when the terminal is not focused.
 	"terminal.integrated.cursorStyleInactive": "outline",
-
-	// Controls the width of the cursor when `terminal.integrated.cursorStyle` is set to `line`.
 	"terminal.integrated.cursorWidth": 1,
-
-	// Whether to draw custom glyphs instead of using the font for the following unicode ranges:
-	// 
-	// - Box Drawing (U+2500-U+257F)
-	// - Block Elements (U+2580-U+259F)
-	// - Braille Patterns (U+2800-U+28FF)
-	// - Powerline Symbols (U+E0A0-U+E0D4, Private Use Area)
-	// - Progress Indicators (U+EE00-U+EE0B, Private Use Area)
-	// - Git Branch Symbols (U+F5D0-U+F60D, Private Use Area)
-	// - Symbols for Legacy Computing (U+1FB00-U+1FBFF)
-	// 
-	// This will typically result in better rendering with continuous lines, even when line height and letter spacing is used. This feature only works when `terminal.integrated.gpuAcceleration` is enabled.
 	"terminal.integrated.customGlyphs": true,
-
-	// An explicit start path where the terminal will be launched, this is used as the current working directory (cwd) for the shell process. This may be particularly useful in workspace settings if the root directory is not a convenient cwd.
 	"terminal.integrated.cwd": "",
-
-	// Controls where newly created terminals will appear.
-	//  - editor: Create terminals in the editor
-	//  - view: Create terminals in the terminal view
 	"terminal.integrated.defaultLocation": "view",
-
-	// The default terminal profile on Linux.
 	"terminal.integrated.defaultProfile.linux": null,
-
-	// The default terminal profile on macOS.
 	"terminal.integrated.defaultProfile.osx": null,
-
-	// The default terminal profile on Windows.
-	//  - null: Automatically detect the default
-	//  - PowerShell: $(terminal-powershell) PowerShell
-	// - path: C:\Users\QuantFerox\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe
-	//  - Windows PowerShell: $(terminal-powershell) Windows PowerShell
-	// - path: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
-	//  - Git Bash: $(terminal-git-bash) Git Bash
-	// - path: C:\Program Files\Git\bin\bash.exe
-	// - args: ['--login','-i']
-	//  - Command Prompt: $(terminal-cmd) Command Prompt
-	// - path: C:\WINDOWS\System32\cmd.exe
-	// - args: []
-	//  - GitHub Copilot CLI: $(copilot) GitHub Copilot CLI
-	// - extensionIdentifier: GitHub.copilot-chat
-	//  - JavaScript Debug Terminal: $($(debug)) JavaScript Debug Terminal
-	// - extensionIdentifier: ms-vscode.js-debug
 	"terminal.integrated.defaultProfile.windows": null,
-
-	// Controls whether to detect and set the `$LANG` environment variable to a UTF-8 compliant option since VS Code's terminal only supports UTF-8 encoded data coming from the shell.
-	//  - auto: Set the `$LANG` environment variable if the existing variable does not exist or it does not end in `'.UTF-8'`.
-	//  - off: Do not set the `$LANG` environment variable.
-	//  - on: Always set the `$LANG` environment variable.
 	"terminal.integrated.detectLocale": "auto",
-
-	// Enable developer mode for the terminal. This shows additional debug information and visualizations for shell integration sequences.
 	"terminal.integrated.developer.devMode": false,
-
-	// Simulated latency in milliseconds applied to all calls made to the pty host. This is useful for testing terminal behavior under high latency conditions.
 	"terminal.integrated.developer.ptyHost.latency": 0,
-
-	// Simulated startup delay in milliseconds for the pty host process. This is useful for testing terminal initialization under slow startup conditions.
 	"terminal.integrated.developer.ptyHost.startupDelay": 0,
-
-	// Controls whether bold text in the terminal will always use the "bright" ANSI color variant.
 	"terminal.integrated.drawBoldTextInBrightColors": true,
-
-	// Whether to enable file links in terminals. Links can be slow when working on a network drive in particular because each file link is verified against the file system. Changing this will take effect only in new terminals.
-	//  - off: Always off.
-	//  - on: Always on.
-	//  - notRemote: Enable only when not in a remote workspace.
 	"terminal.integrated.enableFileLinks": "on",
-
-	// Enables image support in the terminal, this will only work when `terminal.integrated.gpuAcceleration` is enabled. Sixel and iTerm's inline image protocol are supported on Linux and macOS. The kitty graphics protocol is supported on all platforms. On Windows, all image protocols will only work for versions of ConPTY >= v2 which is shipped with Windows itself, see also `terminal.integrated.windowsUseConptyDll`. Images will currently not be restored between window reloads/reconnects. When enabled, transparency mode is also turned on in the terminal.
 	"terminal.integrated.enableImages": false,
-
-	// Whether to enable the kitty keyboard protocol, which allows a program in the terminal to request more detailed keyboard input reporting. This can, for example, enable `Shift+Enter` to be handled by the program.
 	"terminal.integrated.enableKittyKeyboardProtocol": true,
-
-	// Controls whether to show a warning dialog when pasting multiple lines into the terminal.
-	//  - auto: Enable the warning but do not show it when:
-	// 
-	// - Bracketed paste mode is enabled (the shell supports multi-line paste natively)
-	// - The paste is handled by the shell's readline (in the case of pwsh)
-	//  - always: Always show the warning if the text contains a new line.
-	//  - never: Never show the warning.
 	"terminal.integrated.enableMultiLinePasteWarning": "auto",
-
-	// Controls whether notifications sent from the terminal via OSC 99 are shown. This uses notifications inside the product instead of desktop notifications. Sounds, icons and filtering are not supported.
 	"terminal.integrated.enableNotifications": true,
-
-	// Persist terminal sessions/history for the workspace across window reloads.
 	"terminal.integrated.enablePersistentSessions": true,
-
-	// Controls whether the visual terminal bell is enabled. This shows up next to the terminal's name.
 	"terminal.integrated.enableVisualBell": false,
 
 	// Whether to enable the win32 input mode, which provides enhanced keyboard input support on Windows.
@@ -1145,7 +897,7 @@
 	],
 
 	// Controls what font feature settings are used when ligatures are enabled, in the format of the `font-feature-settings` CSS property. Some examples which may be valid depending on the font:
-	// 
+	//
 	// - `"calt" off, "ss03"`
 	// - `"liga" on`
 	// - `"calt" off, "dlig" on`
@@ -1256,7 +1008,7 @@
 	"terminal.integrated.middleClickBehavior": "default",
 
 	// When set, the foreground color of each cell will change to try meet the contrast ratio specified. Note that this will not apply to `powerline` characters per #146406. Example values:
-	// 
+	//
 	// - 1: Do nothing and use the standard theme colors.
 	// - 4.5: [WCAG AA compliance (minimum)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) (default).
 	// - 7: [WCAG AAA compliance (enhanced)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html).
@@ -1270,9 +1022,9 @@
 	"terminal.integrated.mouseWheelZoom": false,
 
 	// When the terminal process must be shut down (for example on window or application close), this determines when the previous terminal session contents/history should be restored and processes be recreated when the workspace is next opened.
-	// 
+	//
 	// Caveats:
-	// 
+	//
 	// - Restoring of the process current working directory depends on whether it is supported by the shell.
 	// - Time to persist the session during shutdown is limited, so it may be aborted when using high-latency remote connections.
 	//  - onExit: Revive the processes after the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu).
@@ -1284,15 +1036,15 @@
 	"terminal.integrated.persistentSessionScrollback": 100,
 
 	// A set of terminal profile customizations for Linux which allows adding, removing or changing how terminals are launched. Profiles are made up of a mandatory path, optional arguments and other presentation options.
-	// 
+	//
 	// To override an existing profile use its profile name as the key, for example:
-	// 
+	//
 	// ```json
 	// "terminal.integrated.profile.linux": {
 	//   "bash": null
 	// }
 	// ```
-	// 
+	//
 	// [Read more about configuring profiles](https://code.visualstudio.com/docs/terminal/profiles).
 	"terminal.integrated.profiles.linux": {
 		"bash": {
@@ -1316,15 +1068,15 @@
 	},
 
 	// A set of terminal profile customizations for Mac which allows adding, removing or changing how terminals are launched. Profiles are made up of a mandatory path, optional arguments and other presentation options.
-	// 
+	//
 	// To override an existing profile use its profile name as the key, for example:
-	// 
+	//
 	// ```json
 	// "terminal.integrated.profile.osx": {
 	//   "bash": null
 	// }
 	// ```
-	// 
+	//
 	// [Read more about configuring profiles](https://code.visualstudio.com/docs/terminal/profiles).
 	"terminal.integrated.profiles.osx": {
 		"bash": {
@@ -1357,15 +1109,15 @@
 	},
 
 	// A set of terminal profile customizations for Windows which allows adding, removing or changing how terminals are launched. Profiles are made up of a mandatory path, optional arguments and other presentation options.
-	// 
+	//
 	// To override an existing profile use its profile name as the key, for example:
-	// 
+	//
 	// ```json
 	// "terminal.integrated.profile.windows": {
 	//   "bash": null
 	// }
 	// ```
-	// 
+	//
 	// [Read more about configuring profiles](https://code.visualstudio.com/docs/terminal/profiles).
 	"terminal.integrated.profiles.windows": {
 		"PowerShell": {
@@ -1410,17 +1162,17 @@
 	//  - never: Do not show decorations
 	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
 
-	// Determines whether or not shell integration is auto-injected to support features like enhanced command tracking and current working directory detection. 
-	// 
+	// Determines whether or not shell integration is auto-injected to support features like enhanced command tracking and current working directory detection.
+	//
 	// Shell integration works by injecting the shell with a startup script. The script gives VS Code insight into what is happening within the terminal.
-	// 
+	//
 	// Supported shells:
-	// 
+	//
 	// - Linux/macOS: bash, fish, pwsh, zsh
 	//  - Windows: pwsh, git bash
-	// 
+	//
 	// This setting applies only when terminals are created, so you will need to restart your terminals for it to take effect.
-	// 
+	//
 	//  Note that the script injection may not work if you have custom arguments defined in the terminal profile, have enabled `editor.accessibilitySupport`, have a [complex bash `PROMPT_COMMAND`](https://code.visualstudio.com/docs/editor/integrated-terminal#_complex-bash-promptcommand), or other unsupported setup. To disable decorations, see `terminal.integrated.shellIntegration.decorationsEnabled`
 	"terminal.integrated.shellIntegration.enabled": true,
 
@@ -1520,27 +1272,6 @@
 	// Determines whether the up arrow key navigates the command history when focus is on the first suggestion and navigation has not yet occurred. When set to false, the up arrow will move focus to the last suggestion instead.
 	"terminal.integrated.suggest.upArrowNavigatesHistory": true,
 
-	// A set of windows command executable extensions that will be included as suggestions in the terminal.
-	// 
-	// Many executables are included by default, listed below:
-	// 
-	// - bat
-	// - cmd
-	// - com
-	// - exe
-	// - jar
-	// - js
-	// - msi
-	// - pl
-	// - ps1
-	// - py
-	// - rb
-	// - sh
-	// - vbs.
-	// 
-	// To exclude an extension, set it to `false`
-	// 
-	// . To include one not in the list, add it and set it to `true`.
 	"terminal.integrated.suggest.windowsExecutableExtensions": {},
 
 	// Controls whether agentic CLIs (such as Claude Code, Codex, GitHub Copilot CLI, and Gemini CLI) are allowed to set the terminal tab title via escape sequences. When disabled, the configured tab title template is used instead.
@@ -1548,755 +1279,7 @@
 
 	// A theme color ID to associate with terminal icons by default.
 	"terminal.integrated.tabs.defaultColor": null,
-
-	// A codicon ID to associate with terminal icons by default.
-	//  - add: $(add)
-	//  - plus: $(plus)
-	//  - gist-new: $(gist-new)
-	//  - repo-create: $(repo-create)
-	//  - lightbulb: $(lightbulb)
-	//  - light-bulb: $(light-bulb)
-	//  - repo: $(repo)
-	//  - repo-delete: $(repo-delete)
-	//  - gist-fork: $(gist-fork)
-	//  - repo-forked: $(repo-forked)
-	//  - git-pull-request: $(git-pull-request)
-	//  - git-pull-request-abandoned: $(git-pull-request-abandoned)
-	//  - record-keys: $(record-keys)
-	//  - keyboard: $(keyboard)
-	//  - tag: $(tag)
-	//  - git-pull-request-label: $(git-pull-request-label)
-	//  - tag-add: $(tag-add)
-	//  - tag-remove: $(tag-remove)
-	//  - person: $(person)
-	//  - person-follow: $(person-follow)
-	//  - person-outline: $(person-outline)
-	//  - person-filled: $(person-filled)
-	//  - source-control: $(source-control)
-	//  - mirror: $(mirror)
-	//  - mirror-public: $(mirror-public)
-	//  - star: $(star)
-	//  - star-add: $(star-add)
-	//  - star-delete: $(star-delete)
-	//  - star-empty: $(star-empty)
-	//  - comment: $(comment)
-	//  - comment-add: $(comment-add)
-	//  - alert: $(alert)
-	//  - warning: $(warning)
-	//  - search: $(search)
-	//  - search-save: $(search-save)
-	//  - log-out: $(log-out)
-	//  - sign-out: $(sign-out)
-	//  - log-in: $(log-in)
-	//  - sign-in: $(sign-in)
-	//  - eye: $(eye)
-	//  - eye-unwatch: $(eye-unwatch)
-	//  - eye-watch: $(eye-watch)
-	//  - circle-filled: $(circle-filled)
-	//  - primitive-dot: $(primitive-dot)
-	//  - close-dirty: $(close-dirty)
-	//  - debug-breakpoint: $(debug-breakpoint)
-	//  - debug-breakpoint-disabled: $(debug-breakpoint-disabled)
-	//  - debug-hint: $(debug-hint)
-	//  - terminal-decoration-success: $(terminal-decoration-success)
-	//  - primitive-square: $(primitive-square)
-	//  - edit: $(edit)
-	//  - pencil: $(pencil)
-	//  - info: $(info)
-	//  - issue-opened: $(issue-opened)
-	//  - gist-private: $(gist-private)
-	//  - git-fork-private: $(git-fork-private)
-	//  - lock: $(lock)
-	//  - mirror-private: $(mirror-private)
-	//  - close: $(close)
-	//  - remove-close: $(remove-close)
-	//  - x: $(x)
-	//  - repo-sync: $(repo-sync)
-	//  - sync: $(sync)
-	//  - clone: $(clone)
-	//  - desktop-download: $(desktop-download)
-	//  - beaker: $(beaker)
-	//  - microscope: $(microscope)
-	//  - vm: $(vm)
-	//  - device-desktop: $(device-desktop)
-	//  - file: $(file)
-	//  - more: $(more)
-	//  - ellipsis: $(ellipsis)
-	//  - kebab-horizontal: $(kebab-horizontal)
-	//  - mail-reply: $(mail-reply)
-	//  - reply: $(reply)
-	//  - organization: $(organization)
-	//  - organization-filled: $(organization-filled)
-	//  - organization-outline: $(organization-outline)
-	//  - new-file: $(new-file)
-	//  - file-add: $(file-add)
-	//  - new-folder: $(new-folder)
-	//  - file-directory-create: $(file-directory-create)
-	//  - trash: $(trash)
-	//  - trashcan: $(trashcan)
-	//  - history: $(history)
-	//  - clock: $(clock)
-	//  - folder: $(folder)
-	//  - file-directory: $(file-directory)
-	//  - symbol-folder: $(symbol-folder)
-	//  - logo-github: $(logo-github)
-	//  - mark-github: $(mark-github)
-	//  - github: $(github)
-	//  - terminal: $(terminal)
-	//  - console: $(console)
-	//  - repl: $(repl)
-	//  - zap: $(zap)
-	//  - symbol-event: $(symbol-event)
-	//  - error: $(error)
-	//  - stop: $(stop)
-	//  - variable: $(variable)
-	//  - symbol-variable: $(symbol-variable)
-	//  - array: $(array)
-	//  - symbol-array: $(symbol-array)
-	//  - symbol-module: $(symbol-module)
-	//  - symbol-package: $(symbol-package)
-	//  - symbol-namespace: $(symbol-namespace)
-	//  - symbol-object: $(symbol-object)
-	//  - symbol-method: $(symbol-method)
-	//  - symbol-function: $(symbol-function)
-	//  - symbol-constructor: $(symbol-constructor)
-	//  - symbol-boolean: $(symbol-boolean)
-	//  - symbol-null: $(symbol-null)
-	//  - symbol-numeric: $(symbol-numeric)
-	//  - symbol-number: $(symbol-number)
-	//  - symbol-structure: $(symbol-structure)
-	//  - symbol-struct: $(symbol-struct)
-	//  - symbol-parameter: $(symbol-parameter)
-	//  - symbol-type-parameter: $(symbol-type-parameter)
-	//  - symbol-key: $(symbol-key)
-	//  - symbol-text: $(symbol-text)
-	//  - symbol-reference: $(symbol-reference)
-	//  - go-to-file: $(go-to-file)
-	//  - symbol-enum: $(symbol-enum)
-	//  - symbol-value: $(symbol-value)
-	//  - symbol-ruler: $(symbol-ruler)
-	//  - symbol-unit: $(symbol-unit)
-	//  - activate-breakpoints: $(activate-breakpoints)
-	//  - archive: $(archive)
-	//  - arrow-both: $(arrow-both)
-	//  - arrow-down: $(arrow-down)
-	//  - arrow-left: $(arrow-left)
-	//  - arrow-right: $(arrow-right)
-	//  - arrow-small-down: $(arrow-small-down)
-	//  - arrow-small-left: $(arrow-small-left)
-	//  - arrow-small-right: $(arrow-small-right)
-	//  - arrow-small-up: $(arrow-small-up)
-	//  - arrow-up: $(arrow-up)
-	//  - bell: $(bell)
-	//  - bold: $(bold)
-	//  - book: $(book)
-	//  - bookmark: $(bookmark)
-	//  - debug-breakpoint-conditional-unverified: $(debug-breakpoint-conditional-unverified)
-	//  - debug-breakpoint-conditional: $(debug-breakpoint-conditional)
-	//  - debug-breakpoint-conditional-disabled: $(debug-breakpoint-conditional-disabled)
-	//  - debug-breakpoint-data-unverified: $(debug-breakpoint-data-unverified)
-	//  - debug-breakpoint-data: $(debug-breakpoint-data)
-	//  - debug-breakpoint-data-disabled: $(debug-breakpoint-data-disabled)
-	//  - debug-breakpoint-log-unverified: $(debug-breakpoint-log-unverified)
-	//  - debug-breakpoint-log: $(debug-breakpoint-log)
-	//  - debug-breakpoint-log-disabled: $(debug-breakpoint-log-disabled)
-	//  - briefcase: $(briefcase)
-	//  - broadcast: $(broadcast)
-	//  - browser: $(browser)
-	//  - bug: $(bug)
-	//  - calendar: $(calendar)
-	//  - case-sensitive: $(case-sensitive)
-	//  - check: $(check)
-	//  - checklist: $(checklist)
-	//  - chevron-down: $(chevron-down)
-	//  - chevron-left: $(chevron-left)
-	//  - chevron-right: $(chevron-right)
-	//  - chevron-up: $(chevron-up)
-	//  - chrome-close: $(chrome-close)
-	//  - chrome-maximize: $(chrome-maximize)
-	//  - chrome-minimize: $(chrome-minimize)
-	//  - chrome-restore: $(chrome-restore)
-	//  - circle-outline: $(circle-outline)
-	//  - circle: $(circle)
-	//  - debug-breakpoint-unverified: $(debug-breakpoint-unverified)
-	//  - terminal-decoration-incomplete: $(terminal-decoration-incomplete)
-	//  - circle-slash: $(circle-slash)
-	//  - circuit-board: $(circuit-board)
-	//  - clear-all: $(clear-all)
-	//  - clippy: $(clippy)
-	//  - close-all: $(close-all)
-	//  - cloud-download: $(cloud-download)
-	//  - cloud-upload: $(cloud-upload)
-	//  - code: $(code)
-	//  - collapse-all: $(collapse-all)
-	//  - color-mode: $(color-mode)
-	//  - comment-discussion: $(comment-discussion)
-	//  - credit-card: $(credit-card)
-	//  - dash: $(dash)
-	//  - dashboard: $(dashboard)
-	//  - database: $(database)
-	//  - debug-continue: $(debug-continue)
-	//  - debug-disconnect: $(debug-disconnect)
-	//  - debug-pause: $(debug-pause)
-	//  - debug-restart: $(debug-restart)
-	//  - debug-start: $(debug-start)
-	//  - debug-step-into: $(debug-step-into)
-	//  - debug-step-out: $(debug-step-out)
-	//  - debug-step-over: $(debug-step-over)
-	//  - debug-stop: $(debug-stop)
-	//  - debug: $(debug)
-	//  - device-camera-video: $(device-camera-video)
-	//  - device-camera: $(device-camera)
-	//  - device-mobile: $(device-mobile)
-	//  - diff-added: $(diff-added)
-	//  - diff-ignored: $(diff-ignored)
-	//  - diff-modified: $(diff-modified)
-	//  - diff-removed: $(diff-removed)
-	//  - diff-renamed: $(diff-renamed)
-	//  - diff: $(diff)
-	//  - diff-sidebyside: $(diff-sidebyside)
-	//  - discard: $(discard)
-	//  - editor-layout: $(editor-layout)
-	//  - empty-window: $(empty-window)
-	//  - exclude: $(exclude)
-	//  - extensions: $(extensions)
-	//  - eye-closed: $(eye-closed)
-	//  - file-binary: $(file-binary)
-	//  - file-code: $(file-code)
-	//  - file-media: $(file-media)
-	//  - file-pdf: $(file-pdf)
-	//  - file-submodule: $(file-submodule)
-	//  - file-symlink-directory: $(file-symlink-directory)
-	//  - file-symlink-file: $(file-symlink-file)
-	//  - file-zip: $(file-zip)
-	//  - files: $(files)
-	//  - filter: $(filter)
-	//  - flame: $(flame)
-	//  - fold-down: $(fold-down)
-	//  - fold-up: $(fold-up)
-	//  - fold: $(fold)
-	//  - folder-active: $(folder-active)
-	//  - folder-opened: $(folder-opened)
-	//  - gear: $(gear)
-	//  - gift: $(gift)
-	//  - gist-secret: $(gist-secret)
-	//  - gist: $(gist)
-	//  - git-commit: $(git-commit)
-	//  - git-compare: $(git-compare)
-	//  - compare-changes: $(compare-changes)
-	//  - git-merge: $(git-merge)
-	//  - github-action: $(github-action)
-	//  - github-alt: $(github-alt)
-	//  - globe: $(globe)
-	//  - grabber: $(grabber)
-	//  - graph: $(graph)
-	//  - gripper: $(gripper)
-	//  - heart: $(heart)
-	//  - home: $(home)
-	//  - horizontal-rule: $(horizontal-rule)
-	//  - hubot: $(hubot)
-	//  - inbox: $(inbox)
-	//  - issue-reopened: $(issue-reopened)
-	//  - issues: $(issues)
-	//  - italic: $(italic)
-	//  - jersey: $(jersey)
-	//  - json: $(json)
-	//  - bracket: $(bracket)
-	//  - kebab-vertical: $(kebab-vertical)
-	//  - key: $(key)
-	//  - law: $(law)
-	//  - lightbulb-autofix: $(lightbulb-autofix)
-	//  - link-external: $(link-external)
-	//  - link: $(link)
-	//  - list-ordered: $(list-ordered)
-	//  - list-unordered: $(list-unordered)
-	//  - live-share: $(live-share)
-	//  - loading: $(loading)
-	//  - location: $(location)
-	//  - mail-read: $(mail-read)
-	//  - mail: $(mail)
-	//  - markdown: $(markdown)
-	//  - megaphone: $(megaphone)
-	//  - mention: $(mention)
-	//  - milestone: $(milestone)
-	//  - git-pull-request-milestone: $(git-pull-request-milestone)
-	//  - mortar-board: $(mortar-board)
-	//  - move: $(move)
-	//  - multiple-windows: $(multiple-windows)
-	//  - mute: $(mute)
-	//  - no-newline: $(no-newline)
-	//  - note: $(note)
-	//  - octoface: $(octoface)
-	//  - open-preview: $(open-preview)
-	//  - package: $(package)
-	//  - paintcan: $(paintcan)
-	//  - pin: $(pin)
-	//  - play: $(play)
-	//  - run: $(run)
-	//  - plug: $(plug)
-	//  - preserve-case: $(preserve-case)
-	//  - preview: $(preview)
-	//  - project: $(project)
-	//  - pulse: $(pulse)
-	//  - question: $(question)
-	//  - quote: $(quote)
-	//  - radio-tower: $(radio-tower)
-	//  - reactions: $(reactions)
-	//  - references: $(references)
-	//  - refresh: $(refresh)
-	//  - regex: $(regex)
-	//  - remote-explorer: $(remote-explorer)
-	//  - remote: $(remote)
-	//  - remove: $(remove)
-	//  - replace-all: $(replace-all)
-	//  - replace: $(replace)
-	//  - repo-clone: $(repo-clone)
-	//  - repo-force-push: $(repo-force-push)
-	//  - repo-pull: $(repo-pull)
-	//  - repo-push: $(repo-push)
-	//  - report: $(report)
-	//  - request-changes: $(request-changes)
-	//  - rocket: $(rocket)
-	//  - root-folder-opened: $(root-folder-opened)
-	//  - root-folder: $(root-folder)
-	//  - rss: $(rss)
-	//  - ruby: $(ruby)
-	//  - save-all: $(save-all)
-	//  - save-as: $(save-as)
-	//  - save: $(save)
-	//  - screen-full: $(screen-full)
-	//  - screen-normal: $(screen-normal)
-	//  - search-stop: $(search-stop)
-	//  - server: $(server)
-	//  - settings-gear: $(settings-gear)
-	//  - settings: $(settings)
-	//  - shield: $(shield)
-	//  - smiley: $(smiley)
-	//  - sort-precedence: $(sort-precedence)
-	//  - split-horizontal: $(split-horizontal)
-	//  - split-vertical: $(split-vertical)
-	//  - squirrel: $(squirrel)
-	//  - star-full: $(star-full)
-	//  - star-half: $(star-half)
-	//  - symbol-class: $(symbol-class)
-	//  - symbol-color: $(symbol-color)
-	//  - symbol-constant: $(symbol-constant)
-	//  - symbol-enum-member: $(symbol-enum-member)
-	//  - symbol-field: $(symbol-field)
-	//  - symbol-file: $(symbol-file)
-	//  - symbol-interface: $(symbol-interface)
-	//  - symbol-keyword: $(symbol-keyword)
-	//  - symbol-misc: $(symbol-misc)
-	//  - symbol-operator: $(symbol-operator)
-	//  - symbol-property: $(symbol-property)
-	//  - wrench: $(wrench)
-	//  - wrench-subaction: $(wrench-subaction)
-	//  - symbol-snippet: $(symbol-snippet)
-	//  - tasklist: $(tasklist)
-	//  - telescope: $(telescope)
-	//  - text-size: $(text-size)
-	//  - three-bars: $(three-bars)
-	//  - thumbsdown: $(thumbsdown)
-	//  - thumbsup: $(thumbsup)
-	//  - tools: $(tools)
-	//  - triangle-down: $(triangle-down)
-	//  - triangle-left: $(triangle-left)
-	//  - triangle-right: $(triangle-right)
-	//  - triangle-up: $(triangle-up)
-	//  - twitter: $(twitter)
-	//  - unfold: $(unfold)
-	//  - unlock: $(unlock)
-	//  - unmute: $(unmute)
-	//  - unverified: $(unverified)
-	//  - verified: $(verified)
-	//  - versions: $(versions)
-	//  - vm-active: $(vm-active)
-	//  - vm-outline: $(vm-outline)
-	//  - vm-running: $(vm-running)
-	//  - watch: $(watch)
-	//  - whitespace: $(whitespace)
-	//  - whole-word: $(whole-word)
-	//  - window: $(window)
-	//  - word-wrap: $(word-wrap)
-	//  - zoom-in: $(zoom-in)
-	//  - zoom-out: $(zoom-out)
-	//  - list-filter: $(list-filter)
-	//  - list-flat: $(list-flat)
-	//  - list-selection: $(list-selection)
-	//  - selection: $(selection)
-	//  - list-tree: $(list-tree)
-	//  - debug-breakpoint-function-unverified: $(debug-breakpoint-function-unverified)
-	//  - debug-breakpoint-function: $(debug-breakpoint-function)
-	//  - debug-breakpoint-function-disabled: $(debug-breakpoint-function-disabled)
-	//  - debug-stackframe-active: $(debug-stackframe-active)
-	//  - circle-small-filled: $(circle-small-filled)
-	//  - debug-stackframe-dot: $(debug-stackframe-dot)
-	//  - terminal-decoration-mark: $(terminal-decoration-mark)
-	//  - debug-stackframe: $(debug-stackframe)
-	//  - debug-stackframe-focused: $(debug-stackframe-focused)
-	//  - debug-breakpoint-unsupported: $(debug-breakpoint-unsupported)
-	//  - symbol-string: $(symbol-string)
-	//  - debug-reverse-continue: $(debug-reverse-continue)
-	//  - debug-step-back: $(debug-step-back)
-	//  - debug-restart-frame: $(debug-restart-frame)
-	//  - debug-alt: $(debug-alt)
-	//  - call-incoming: $(call-incoming)
-	//  - call-outgoing: $(call-outgoing)
-	//  - menu: $(menu)
-	//  - expand-all: $(expand-all)
-	//  - feedback: $(feedback)
-	//  - git-pull-request-reviewer: $(git-pull-request-reviewer)
-	//  - group-by-ref-type: $(group-by-ref-type)
-	//  - ungroup-by-ref-type: $(ungroup-by-ref-type)
-	//  - account: $(account)
-	//  - git-pull-request-assignee: $(git-pull-request-assignee)
-	//  - bell-dot: $(bell-dot)
-	//  - debug-console: $(debug-console)
-	//  - library: $(library)
-	//  - output: $(output)
-	//  - run-all: $(run-all)
-	//  - sync-ignored: $(sync-ignored)
-	//  - pinned: $(pinned)
-	//  - github-inverted: $(github-inverted)
-	//  - server-process: $(server-process)
-	//  - server-environment: $(server-environment)
-	//  - pass: $(pass)
-	//  - issue-closed: $(issue-closed)
-	//  - stop-circle: $(stop-circle)
-	//  - play-circle: $(play-circle)
-	//  - record: $(record)
-	//  - debug-alt-small: $(debug-alt-small)
-	//  - vm-connect: $(vm-connect)
-	//  - cloud: $(cloud)
-	//  - merge: $(merge)
-	//  - export: $(export)
-	//  - graph-left: $(graph-left)
-	//  - magnet: $(magnet)
-	//  - notebook: $(notebook)
-	//  - redo: $(redo)
-	//  - check-all: $(check-all)
-	//  - pinned-dirty: $(pinned-dirty)
-	//  - pass-filled: $(pass-filled)
-	//  - circle-large-filled: $(circle-large-filled)
-	//  - circle-large: $(circle-large)
-	//  - circle-large-outline: $(circle-large-outline)
-	//  - combine: $(combine)
-	//  - gather: $(gather)
-	//  - table: $(table)
-	//  - variable-group: $(variable-group)
-	//  - type-hierarchy: $(type-hierarchy)
-	//  - type-hierarchy-sub: $(type-hierarchy-sub)
-	//  - type-hierarchy-super: $(type-hierarchy-super)
-	//  - git-pull-request-create: $(git-pull-request-create)
-	//  - run-above: $(run-above)
-	//  - run-below: $(run-below)
-	//  - notebook-template: $(notebook-template)
-	//  - debug-rerun: $(debug-rerun)
-	//  - workspace-trusted: $(workspace-trusted)
-	//  - workspace-untrusted: $(workspace-untrusted)
-	//  - workspace-unknown: $(workspace-unknown)
-	//  - terminal-cmd: $(terminal-cmd)
-	//  - terminal-debian: $(terminal-debian)
-	//  - terminal-linux: $(terminal-linux)
-	//  - terminal-powershell: $(terminal-powershell)
-	//  - terminal-tmux: $(terminal-tmux)
-	//  - terminal-ubuntu: $(terminal-ubuntu)
-	//  - terminal-bash: $(terminal-bash)
-	//  - arrow-swap: $(arrow-swap)
-	//  - copy: $(copy)
-	//  - person-add: $(person-add)
-	//  - filter-filled: $(filter-filled)
-	//  - wand: $(wand)
-	//  - debug-line-by-line: $(debug-line-by-line)
-	//  - inspect: $(inspect)
-	//  - layers: $(layers)
-	//  - layers-dot: $(layers-dot)
-	//  - layers-active: $(layers-active)
-	//  - compass: $(compass)
-	//  - compass-dot: $(compass-dot)
-	//  - compass-active: $(compass-active)
-	//  - azure: $(azure)
-	//  - issue-draft: $(issue-draft)
-	//  - git-pull-request-closed: $(git-pull-request-closed)
-	//  - git-pull-request-draft: $(git-pull-request-draft)
-	//  - debug-all: $(debug-all)
-	//  - debug-coverage: $(debug-coverage)
-	//  - run-errors: $(run-errors)
-	//  - folder-library: $(folder-library)
-	//  - debug-continue-small: $(debug-continue-small)
-	//  - beaker-stop: $(beaker-stop)
-	//  - graph-line: $(graph-line)
-	//  - graph-scatter: $(graph-scatter)
-	//  - pie-chart: $(pie-chart)
-	//  - bracket-dot: $(bracket-dot)
-	//  - bracket-error: $(bracket-error)
-	//  - lock-small: $(lock-small)
-	//  - azure-devops: $(azure-devops)
-	//  - verified-filled: $(verified-filled)
-	//  - newline: $(newline)
-	//  - layout: $(layout)
-	//  - layout-activitybar-left: $(layout-activitybar-left)
-	//  - layout-activitybar-right: $(layout-activitybar-right)
-	//  - layout-panel-left: $(layout-panel-left)
-	//  - layout-panel-center: $(layout-panel-center)
-	//  - layout-panel-justify: $(layout-panel-justify)
-	//  - layout-panel-right: $(layout-panel-right)
-	//  - layout-panel: $(layout-panel)
-	//  - layout-sidebar-left: $(layout-sidebar-left)
-	//  - layout-sidebar-right: $(layout-sidebar-right)
-	//  - layout-statusbar: $(layout-statusbar)
-	//  - layout-menubar: $(layout-menubar)
-	//  - layout-centered: $(layout-centered)
-	//  - target: $(target)
-	//  - indent: $(indent)
-	//  - record-small: $(record-small)
-	//  - error-small: $(error-small)
-	//  - terminal-decoration-error: $(terminal-decoration-error)
-	//  - arrow-circle-down: $(arrow-circle-down)
-	//  - arrow-circle-left: $(arrow-circle-left)
-	//  - arrow-circle-right: $(arrow-circle-right)
-	//  - arrow-circle-up: $(arrow-circle-up)
-	//  - layout-sidebar-right-off: $(layout-sidebar-right-off)
-	//  - layout-panel-off: $(layout-panel-off)
-	//  - layout-sidebar-left-off: $(layout-sidebar-left-off)
-	//  - blank: $(blank)
-	//  - heart-filled: $(heart-filled)
-	//  - map: $(map)
-	//  - map-horizontal: $(map-horizontal)
-	//  - fold-horizontal: $(fold-horizontal)
-	//  - map-filled: $(map-filled)
-	//  - map-horizontal-filled: $(map-horizontal-filled)
-	//  - fold-horizontal-filled: $(fold-horizontal-filled)
-	//  - circle-small: $(circle-small)
-	//  - bell-slash: $(bell-slash)
-	//  - bell-slash-dot: $(bell-slash-dot)
-	//  - comment-unresolved: $(comment-unresolved)
-	//  - git-pull-request-go-to-changes: $(git-pull-request-go-to-changes)
-	//  - git-pull-request-new-changes: $(git-pull-request-new-changes)
-	//  - search-fuzzy: $(search-fuzzy)
-	//  - comment-draft: $(comment-draft)
-	//  - send: $(send)
-	//  - sparkle: $(sparkle)
-	//  - insert: $(insert)
-	//  - mic: $(mic)
-	//  - thumbsdown-filled: $(thumbsdown-filled)
-	//  - thumbsup-filled: $(thumbsup-filled)
-	//  - coffee: $(coffee)
-	//  - snake: $(snake)
-	//  - game: $(game)
-	//  - vr: $(vr)
-	//  - chip: $(chip)
-	//  - piano: $(piano)
-	//  - music: $(music)
-	//  - mic-filled: $(mic-filled)
-	//  - repo-fetch: $(repo-fetch)
-	//  - copilot: $(copilot)
-	//  - lightbulb-sparkle: $(lightbulb-sparkle)
-	//  - robot: $(robot)
-	//  - sparkle-filled: $(sparkle-filled)
-	//  - diff-single: $(diff-single)
-	//  - diff-multiple: $(diff-multiple)
-	//  - surround-with: $(surround-with)
-	//  - share: $(share)
-	//  - git-stash: $(git-stash)
-	//  - git-stash-apply: $(git-stash-apply)
-	//  - git-stash-pop: $(git-stash-pop)
-	//  - vscode: $(vscode)
-	//  - vscode-insiders: $(vscode-insiders)
-	//  - code-oss: $(code-oss)
-	//  - run-coverage: $(run-coverage)
-	//  - run-all-coverage: $(run-all-coverage)
-	//  - coverage: $(coverage)
-	//  - github-project: $(github-project)
-	//  - map-vertical: $(map-vertical)
-	//  - fold-vertical: $(fold-vertical)
-	//  - map-vertical-filled: $(map-vertical-filled)
-	//  - fold-vertical-filled: $(fold-vertical-filled)
-	//  - go-to-search: $(go-to-search)
-	//  - percentage: $(percentage)
-	//  - sort-percentage: $(sort-percentage)
-	//  - attach: $(attach)
-	//  - go-to-editing-session: $(go-to-editing-session)
-	//  - edit-session: $(edit-session)
-	//  - code-review: $(code-review)
-	//  - copilot-warning: $(copilot-warning)
-	//  - python: $(python)
-	//  - copilot-large: $(copilot-large)
-	//  - copilot-warning-large: $(copilot-warning-large)
-	//  - keyboard-tab: $(keyboard-tab)
-	//  - copilot-blocked: $(copilot-blocked)
-	//  - copilot-not-connected: $(copilot-not-connected)
-	//  - flag: $(flag)
-	//  - lightbulb-empty: $(lightbulb-empty)
-	//  - symbol-method-arrow: $(symbol-method-arrow)
-	//  - copilot-unavailable: $(copilot-unavailable)
-	//  - repo-pinned: $(repo-pinned)
-	//  - keyboard-tab-above: $(keyboard-tab-above)
-	//  - keyboard-tab-below: $(keyboard-tab-below)
-	//  - git-pull-request-done: $(git-pull-request-done)
-	//  - mcp: $(mcp)
-	//  - extensions-large: $(extensions-large)
-	//  - layout-panel-dock: $(layout-panel-dock)
-	//  - layout-sidebar-left-dock: $(layout-sidebar-left-dock)
-	//  - layout-sidebar-right-dock: $(layout-sidebar-right-dock)
-	//  - copilot-in-progress: $(copilot-in-progress)
-	//  - copilot-error: $(copilot-error)
-	//  - copilot-success: $(copilot-success)
-	//  - chat-sparkle: $(chat-sparkle)
-	//  - search-sparkle: $(search-sparkle)
-	//  - edit-sparkle: $(edit-sparkle)
-	//  - copilot-snooze: $(copilot-snooze)
-	//  - send-to-remote-agent: $(send-to-remote-agent)
-	//  - comment-discussion-sparkle: $(comment-discussion-sparkle)
-	//  - chat-sparkle-warning: $(chat-sparkle-warning)
-	//  - chat-sparkle-error: $(chat-sparkle-error)
-	//  - collection: $(collection)
-	//  - new-collection: $(new-collection)
-	//  - thinking: $(thinking)
-	//  - build: $(build)
-	//  - comment-discussion-quote: $(comment-discussion-quote)
-	//  - cursor: $(cursor)
-	//  - eraser: $(eraser)
-	//  - file-text: $(file-text)
-	//  - quotes: $(quotes)
-	//  - rename: $(rename)
-	//  - run-with-deps: $(run-with-deps)
-	//  - debug-connected: $(debug-connected)
-	//  - strikethrough: $(strikethrough)
-	//  - open-in-product: $(open-in-product)
-	//  - index-zero: $(index-zero)
-	//  - agent: $(agent)
-	//  - edit-code: $(edit-code)
-	//  - repo-selected: $(repo-selected)
-	//  - skip: $(skip)
-	//  - merge-into: $(merge-into)
-	//  - git-branch-changes: $(git-branch-changes)
-	//  - git-branch-staged-changes: $(git-branch-staged-changes)
-	//  - git-branch-conflicts: $(git-branch-conflicts)
-	//  - git-branch: $(git-branch)
-	//  - git-branch-create: $(git-branch-create)
-	//  - git-branch-delete: $(git-branch-delete)
-	//  - search-large: $(search-large)
-	//  - terminal-git-bash: $(terminal-git-bash)
-	//  - window-active: $(window-active)
-	//  - forward: $(forward)
-	//  - download: $(download)
-	//  - clockface: $(clockface)
-	//  - unarchive: $(unarchive)
-	//  - session-in-progress: $(session-in-progress)
-	//  - collection-small: $(collection-small)
-	//  - vm-small: $(vm-small)
-	//  - cloud-small: $(cloud-small)
-	//  - add-small: $(add-small)
-	//  - remove-small: $(remove-small)
-	//  - worktree-small: $(worktree-small)
-	//  - worktree: $(worktree)
-	//  - screen-cut: $(screen-cut)
-	//  - ask: $(ask)
-	//  - openai: $(openai)
-	//  - claude: $(claude)
-	//  - open-in-window: $(open-in-window)
-	//  - new-session: $(new-session)
-	//  - terminal-secure: $(terminal-secure)
-	//  - chat-import: $(chat-import)
-	//  - chat-export: $(chat-export)
-	//  - share-window: $(share-window)
-	//  - circle-slash-compact: $(circle-slash-compact)
-	//  - copilot-compact: $(copilot-compact)
-	//  - folder-opened-compact: $(folder-opened-compact)
-	//  - folder-compact: $(folder-compact)
-	//  - gear-compact: $(gear-compact)
-	//  - git-branch-compact: $(git-branch-compact)
-	//  - library-compact: $(library-compact)
-	//  - record-keys-compact: $(record-keys-compact)
-	//  - remote-compact: $(remote-compact)
-	//  - repo-forked-compact: $(repo-forked-compact)
-	//  - repo-compact: $(repo-compact)
-	//  - shield-compact: $(shield-compact)
-	//  - sparkle-compact: $(sparkle-compact)
-	//  - symbol-color-compact: $(symbol-color-compact)
-	//  - window-compact: $(window-compact)
-	//  - error-compact: $(error-compact)
-	//  - warning-compact: $(warning-compact)
-	//  - pass-compact: $(pass-compact)
-	//  - important: $(important)
-	//  - important-compact: $(important-compact)
-	//  - rocket-compact: $(rocket-compact)
-	//  - unpin: $(unpin)
-	//  - add-compact: $(add-compact)
-	//  - attach-compact: $(attach-compact)
-	//  - beaker-compact: $(beaker-compact)
-	//  - check-compact: $(check-compact)
-	//  - checklist-compact: $(checklist-compact)
-	//  - chevron-down-compact: $(chevron-down-compact)
-	//  - chevron-left-compact: $(chevron-left-compact)
-	//  - chevron-right-compact: $(chevron-right-compact)
-	//  - chevron-up-compact: $(chevron-up-compact)
-	//  - circle-filled-compact: $(circle-filled-compact)
-	//  - circle-small-filled-compact: $(circle-small-filled-compact)
-	//  - close-compact: $(close-compact)
-	//  - collapse-all-compact: $(collapse-all-compact)
-	//  - comment-compact: $(comment-compact)
-	//  - comment-unresolved-compact: $(comment-unresolved-compact)
-	//  - debug-connected-compact: $(debug-connected-compact)
-	//  - debug-disconnect-compact: $(debug-disconnect-compact)
-	//  - edit-compact: $(edit-compact)
-	//  - file-media-compact: $(file-media-compact)
-	//  - git-fetch: $(git-fetch)
-	//  - lightbulb-compact: $(lightbulb-compact)
-	//  - loading-compact: $(loading-compact)
-	//  - pass-filled-compact: $(pass-filled-compact)
-	//  - project-compact: $(project-compact)
-	//  - refresh-compact: $(refresh-compact)
-	//  - search-compact: $(search-compact)
-	//  - session-in-progress-compact: $(session-in-progress-compact)
-	//  - sync-compact: $(sync-compact)
-	//  - terminal-compact: $(terminal-compact)
-	//  - vm-pending: $(vm-pending)
-	//  - worktree-compact: $(worktree-compact)
-	//  - dialog-error: $(dialog-error)
-	//  - dialog-warning: $(dialog-warning)
-	//  - dialog-info: $(dialog-info)
-	//  - dialog-close: $(dialog-close)
-	//  - tree-item-expanded: $(tree-item-expanded)
-	//  - tree-filter-on-type-on: $(tree-filter-on-type-on)
-	//  - tree-filter-on-type-off: $(tree-filter-on-type-off)
-	//  - tree-filter-clear: $(tree-filter-clear)
-	//  - tree-item-loading: $(tree-item-loading)
-	//  - menu-selection: $(menu-selection)
-	//  - menu-submenu: $(menu-submenu)
-	//  - menubar-more: $(menubar-more)
-	//  - scrollbar-button-left: $(scrollbar-button-left)
-	//  - scrollbar-button-right: $(scrollbar-button-right)
-	//  - scrollbar-button-up: $(scrollbar-button-up)
-	//  - scrollbar-button-down: $(scrollbar-button-down)
-	//  - toolbar-more: $(toolbar-more)
-	//  - quick-input-back: $(quick-input-back)
-	//  - drop-down-button: $(drop-down-button)
-	//  - symbol-customcolor: $(symbol-customcolor)
-	//  - export: $(export)
-	//  - workspace-unspecified: $(workspace-unspecified)
-	//  - newline: $(newline)
-	//  - thumbsdown-filled: $(thumbsdown-filled)
-	//  - thumbsup-filled: $(thumbsup-filled)
-	//  - lightbulb-sparkle-autofix: $(lightbulb-sparkle-autofix)
-	//  - debug-breakpoint-pending: $(debug-breakpoint-pending)
 	"terminal.integrated.tabs.defaultIcon": "terminal",
-
-	// Controls the terminal description, which appears to the right of the title. Variables are substituted based on the context:
-	// - `${cwd}`: the terminal's current working directory.
-	// - `${cwdFolder}`: the terminal's current working directory, displayed for multi-root workspaces or in a single root workspace when the value differs from the initial working directory. On Windows, this will only be displayed when shell integration is enabled.
-	// - `${workspaceFolder}`: the workspace in which the terminal was launched.
-	// - `${workspaceFolderName}`: the `name` of the workspace in which the terminal was launched.
-	// - `${local}`: indicates a local terminal in a remote workspace.
-	// - `${process}`: the name of the terminal process.
-	// - `${progress}`: the progress state as reported by the `OSC 9;4` sequence.
-	// - `${separator}`: a conditional separator (` - `) that only shows when it's surrounded by variables with values or static text.
-	// - `${sequence}`: the name provided to the terminal by the process.
-	// - `${task}`: indicates this terminal is associated with a task.
-	// - `${shellType}`: the detected shell type.
-	// - `${shellCommand}`: the command being executed according to shell integration. This also requires high confidence in the detected command line, which may not work in some prompt frameworks.
-	// - `${shellPromptInput}`: the shell's full prompt input according to shell integration.
 	"terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}",
 
 	// Controls whether terminal tab statuses support animation (eg. in progress tasks).
@@ -2338,20 +1321,6 @@
 	//  - never: Never show the active terminal
 	"terminal.integrated.tabs.showActiveTerminal": "singleTerminalOrNarrow",
 
-	// Controls the terminal title. Variables are substituted based on the context:
-	// - `${cwd}`: the terminal's current working directory.
-	// - `${cwdFolder}`: the terminal's current working directory, displayed for multi-root workspaces or in a single root workspace when the value differs from the initial working directory. On Windows, this will only be displayed when shell integration is enabled.
-	// - `${workspaceFolder}`: the workspace in which the terminal was launched.
-	// - `${workspaceFolderName}`: the `name` of the workspace in which the terminal was launched.
-	// - `${local}`: indicates a local terminal in a remote workspace.
-	// - `${process}`: the name of the terminal process.
-	// - `${progress}`: the progress state as reported by the `OSC 9;4` sequence.
-	// - `${separator}`: a conditional separator (` - `) that only shows when it's surrounded by variables with values or static text.
-	// - `${sequence}`: the name provided to the terminal by the process.
-	// - `${task}`: indicates this terminal is associated with a task.
-	// - `${shellType}`: the detected shell type.
-	// - `${shellCommand}`: the command being executed according to shell integration. This also requires high confidence in the detected command line, which may not work in some prompt frameworks.
-	// - `${shellPromptInput}`: the shell's full prompt input according to shell integration.
 	"terminal.integrated.tabs.title": "${process}",
 
 	// The number of cells in a tab stop.
@@ -2379,18 +1348,9 @@
 		"lsp": false,
 		"vscode.terminal-suggest": true
 	},
-	"terminal.integrated.initialHint": false,
 	//<================>LANGUAGES<================>
 	//<========>HTML<========>
-	"html.autoClosingTags": true,
-	"html.autoCreateQuotes": true,
-	"html.completion.attributeDefaultValue": "doublequotes",
-	"html.customData": [],
-	"html.format.contentUnformatted": "pre,code,textarea",
-	"html.format.enable": true,
-	"html.format.extraLiners": "head, body, /html",
-	"html.format.indentHandlebars": false,
-	"html.format.indentInnerHtml": false,
+	"html.format.indentHandlebars": true,
 	"html.format.maxPreserveNewLines": null,
 	"html.format.preserveNewLines": true,
 	"html.format.templating": false,
@@ -2401,7 +1361,6 @@
 	"html.format.wrapLineLength": 120,
 	"html.hover.documentation": true,
 	"html.hover.references": true,
-	"html.mirrorCursorOnMatchingTag": false,
 	"html.suggest.hideEndTagSuggestions": false,
 	"html.suggest.html5": true,
 	"html.trace.server": "off",
@@ -2536,148 +1495,7 @@
 	"js/ts.tsserver.web.projectWideIntellisense.enabled": true,
 	"js/ts.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
 	"js/ts.tsserver.web.typeAcquisition.enabled": true,
-
-
-
-	"typescript.experimental.useTsgo": false,
-	"typescript.locale": "auto",
-	"typescript.tsc.autoDetect": "on",
-	"typescript.tsdk": "",
-	"typescript.preferences.autoImportFileExcludePatterns": [],
-	"typescript.preferences.autoImportSpecifierExcludeRegexes": [],
-	"typescript.preferences.importModuleSpecifier": "shortest",
-	"typescript.preferences.importModuleSpecifierEnding": "auto",
-	"typescript.preferences.includePackageJsonAutoImports": "auto",
-	"typescript.preferences.jsxAttributeCompletionStyle": "auto",
-	"typescript.preferences.organizeImports": {},
-	"typescript.preferences.preferTypeOnlyAutoImports": false,
-	"typescript.preferences.quoteStyle": "auto",
-	"typescript.preferences.renameMatchingJsxTags": true,
-	"typescript.preferences.useAliasesForRenames": true,
-	"typescript.format.enable": true,
-	"typescript.format.indentSwitchCase": true,
-	"typescript.format.insertSpaceAfterCommaDelimiter": true,
-	"typescript.format.insertSpaceAfterConstructor": false,
-	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-	"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-	"typescript.format.insertSpaceAfterSemicolonInForStatements": true,
-	"typescript.format.insertSpaceAfterTypeAssertion": false,
-	"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
-	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
-	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
-	"typescript.format.semicolons": "ignore",
-	"typescript.reportStyleChecksAsWarnings": true,
-	"typescript.suggestionActions.enabled": true,
-	"typescript.tsserver.experimental.enableProjectDiagnostics": false,
-	"typescript.validate.enable": true,
-	"typescript.autoClosingTags": true,
-	"typescript.preferGoToSourceDefinition": false,
-	"typescript.updateImportsOnFileMove.enabled": "prompt",
-	"typescript.updateImportsOnPaste.enabled": true,
-	"typescript.workspaceSymbols.excludeLibrarySymbols": true,
-	"typescript.workspaceSymbols.scope": "allOpenProjects",
-	"typescript.suggest.autoImports": true,
-	"typescript.suggest.classMemberSnippets.enabled": true,
-	"typescript.suggest.completeFunctionCalls": false,
-	"typescript.suggest.completeJSDocs": true,
-	"typescript.suggest.enabled": true,
-	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
-	"typescript.suggest.includeCompletionsForImportStatements": true,
-	"typescript.suggest.jsdoc.generateReturns": true,
-	"typescript.suggest.objectLiteralMethodSnippets.enabled": true,
-	"typescript.suggest.paths": true,
-	"typescript.implementationsCodeLens.enabled": false,
-	"typescript.implementationsCodeLens.showOnAllClassMethods": false,
-	"typescript.implementationsCodeLens.showOnInterfaceMethods": false,
-	"typescript.referencesCodeLens.enabled": false,
-	"typescript.referencesCodeLens.showOnAllFunctions": false,
-	"typescript.inlayHints.enumMemberValues.enabled": false,
-	"typescript.inlayHints.functionLikeReturnTypes.enabled": false,
-	"typescript.inlayHints.parameterNames.enabled": "none",
-	"typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-	"typescript.inlayHints.parameterTypes.enabled": false,
-	"typescript.inlayHints.propertyDeclarationTypes.enabled": false,
-	"typescript.inlayHints.variableTypes.enabled": false,
-	"typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-	"typescript.check.npmIsInstalled": true,
-	"typescript.disableAutomaticTypeAcquisition": false,
-	"typescript.enablePromptUseWorkspaceTsdk": false,
-	"typescript.npm": "",
-	"typescript.tsserver.enableTracing": false,
-	"typescript.tsserver.log": "off",
-	"typescript.tsserver.maxTsServerMemory": 3072,
-	"typescript.tsserver.nodePath": "",
-	"typescript.tsserver.pluginPaths": [],
-	"typescript.tsserver.useSyntaxServer": "auto",
-	"typescript.tsserver.watchOptions": "vscode",
-	"typescript.tsserver.web.projectWideIntellisense.enabled": true,
-	"typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
-	"typescript.tsserver.web.typeAcquisition.enabled": true,
-	//  For example: `{"vue-html": "html", "javascript": "javascriptreact"}`
-	"javascript.preferences.autoImportFileExcludePatterns": [],
-	"javascript.preferences.autoImportSpecifierExcludeRegexes": [],
-	"javascript.preferences.importModuleSpecifier": "shortest",
-	"javascript.preferences.importModuleSpecifierEnding": "auto",
-	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
-	"javascript.preferences.organizeImports": {},
-	"javascript.preferences.quoteStyle": "auto",
-	"javascript.preferences.renameMatchingJsxTags": true,
-	"javascript.preferences.useAliasesForRenames": true,
-	"javascript.format.enable": true,
-	"javascript.format.indentSwitchCase": true,
-	"javascript.format.insertSpaceAfterCommaDelimiter": true,
-	"javascript.format.insertSpaceAfterConstructor": false,
-	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-	"javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
-	"javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
-	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
-	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-	"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-	"javascript.format.semicolons": "ignore",
-	"javascript.suggestionActions.enabled": true,
-	"javascript.validate.enable": true,
-	"javascript.autoClosingTags": true,
-	"javascript.preferGoToSourceDefinition": false,
-	"javascript.updateImportsOnFileMove.enabled": "prompt",
-	"javascript.updateImportsOnPaste.enabled": true,
-	"javascript.suggest.autoImports": true,
-	"javascript.suggest.classMemberSnippets.enabled": true,
-	"javascript.suggest.completeFunctionCalls": false,
-	"javascript.suggest.completeJSDocs": true,
-	"javascript.suggest.enabled": true,
-	"javascript.suggest.includeAutomaticOptionalChainCompletions": true,
-	"javascript.suggest.includeCompletionsForImportStatements": true,
-	"javascript.suggest.jsdoc.generateReturns": true,
-	"javascript.suggest.names": true,
-	"javascript.suggest.paths": true,
-	"javascript.referencesCodeLens.enabled": false,
-	"javascript.referencesCodeLens.showOnAllFunctions": false,
-	"javascript.inlayHints.functionLikeReturnTypes.enabled": false,
-	"javascript.inlayHints.parameterNames.enabled": "none",
-	"javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-	"javascript.inlayHints.parameterTypes.enabled": false,
-	"javascript.inlayHints.propertyDeclarationTypes.enabled": false,
-	"javascript.inlayHints.variableTypes.enabled": false,
-	"javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-
-
-
 	//<========>JSON<========>
-	"json.colorDecorators.enable": true,
 	"json.format.enable": true,
 	"json.format.keepLines": false,
 	"json.maxItemsComputed": 5000,
@@ -2687,7 +1505,6 @@
 	"json.trace.server": "off",
 	"json.validate.enable": true,
 	//<========>PHP<========>
-	"phpprofiler.cachegrind": false,
 	"php.suggest.basic": false,
 	"php.validate.enable": false,
 	"php.validate.executablePath": null,
@@ -2756,7 +1573,6 @@
 	"php.workspace.includePath": "",
 	"php.workspace.shortOpenTag": "auto",
 	"phpTools.language": null,
-	"phpTools.license": "",
 	"phpTools.parallelismLimit": null,
 	"phpTools.suppressPremiumFeatures": false,
 	"phpunit.command": "\"${php}\" ${phpargs} \"${phpunit}\" ${phpunitargs}",
@@ -2881,7 +1697,6 @@
 	"python.interpreter.infoVisibility": "onPythonRelated",
 	"python.languageServer": "Default",
 	"python.locator": "js",
-	"python.logging.level": "error",
 	"python.missingPackage.severity": "Hint",
 	"python.pipenvPath": "pipenv",
 	"python.pixiToolPath": "pixi",
@@ -3025,8 +1840,6 @@
 	// Enable linting. Rules can be configured individually using the `tailwindcss.lint.*` settings
 	"tailwindCSS.validate": true,
 	//<========>PRETTIER<========>
-	"github.copilot.chat.agent.terminal.allowList": null,
-	"github.copilot.chat.agent.terminal.denyList": null,
 	/*Строка  6365: 		"Git Bash": {
 	Строка  6366: 			"source": "Git Bash",
 	Строка  9180: 		"github/copilot-plugins",
@@ -3042,7 +1855,6 @@
 	"github.copilot.chat.agent.modelDetails.enabled": true,
 	"github.copilot.chat.agent.omitFileAttachmentContents": false,
 	"github.copilot.chat.agent.temperature": 0,
-	"github.copilot.chat.agentDebugLog.enabled": false,
 	"github.copilot.chat.agentDebugLog.fileLogging.enabled": false,
 	"github.copilot.chat.agentDebugLog.fileLogging.flushIntervalMs": 4000,
 	"github.copilot.chat.agentDebugLog.fileLogging.maxRetainedSessionLogs": 50,
@@ -3260,7 +2072,6 @@
 	"git.enableStatusBarSync": true,
 	"git.fetchOnPull": false,
 	"git.followTagsWhenSync": false,
-	"git.githubAuthentication": null,
 	"git.ignoredRepositories": [],
 	"git.ignoreLegacyWarning": false,
 	"git.ignoreLimitWarning": false,
@@ -3366,7 +2177,6 @@
 	//  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
 	// ESLint
 	// The setting is deprecated. Use editor.codeActionsOnSave instead with a source.fixAll.eslint member.
-	"eslint.autoFixOnSave": false,
 	"eslint.codeAction.disableRuleComment": {},
 	"eslint.codeAction.showDocumentation": {},
 	"eslint.codeActionsOnSave.mode": "all",
@@ -3402,11 +2212,9 @@
 	"eslint.onIgnoredFiles": "off",
 	// The eslint options object to provide args normally passed to eslint when executed from a command line (see https://eslint.org/docs/developer-guide/nodejs-api#eslint-class).
 	"eslint.options": {},
-	"eslint.packageManager": "npm",
 	"eslint.probe": [],
 	"eslint.problems.shortenToSingleLine": false,
 	// This option is deprecated. Use eslint.lintTask.enable instead.
-	"eslint.provideLintTask": false,
 	"eslint.quiet": false,
 	// Override the severity of one or more rules reported by this extension, regardless of the project's ESLint config. Use globs to apply default severities for multiple rules.
 	"eslint.rules.customizations": [],
@@ -3432,10 +2240,9 @@
 	"eslint.workingDirectories": [],
 	//<========>PRETTIER<========>
 	"prettier.arrowParens": "always",
-	"prettier.bracketSameLine": false,
+	"prettier.bracketSameLine": true,
 	"prettier.bracketSpacing": true,
 	"prettier.configPath": "",
-	"prettier.disableLanguages": [],
 	"prettier.documentSelectors": [],
 	"prettier.embeddedLanguageFormatting": "auto",
 	"prettier.enable": true,
@@ -3446,7 +2253,6 @@
 	"prettier.htmlWhitespaceSensitivity": "css",
 	"prettier.ignorePath": ".prettierignore",
 	"prettier.insertPragma": false,
-	"prettier.jsxBracketSameLine": false,
 	"prettier.jsxSingleQuote": false,
 	"prettier.objectWrap": "preserve",
 	"prettier.packageManager": "npm",
@@ -3467,63 +2273,29 @@
 	"prettier.vueIndentScriptAndStyle": false,
 	"prettier.withNodeModules": false,
 	//<========>IMPORT COST<========>
-	"importCost.bundleSizeColoring": "minified",
-	"importCost.bundleSizeDecoration": "both",
-	"importCost.debug": false,
-	"importCost.fontStyle": "normal",
-	"importCost.javascriptExtensions": [],
-	"importCost.largePackageDarkColor": "#d44e40",
-	"importCost.largePackageLightColor": "#d44e40",
-	"importCost.margin": 1,
-	"importCost.mediumPackageDarkColor": "#7cc36e",
-	"importCost.mediumPackageLightColor": "#7cc36e",
-	"importCost.mediumPackageSize": 100,
-	"importCost.showCalculatingDecoration": true,
-	"importCost.smallPackageDarkColor": "#7cc36e",
-	"importCost.smallPackageLightColor": "#7cc36e",
-	"importCost.smallPackageSize": 50,
-	"importCost.svelteExtensions": [],
-	"importCost.timeout": 20000,
-	"importCost.typescriptExtensions": [],
-	"importCost.vueExtensions": [],
-	//<========>EDITOR CONFIG<========>
-	"editorconfig.generateAuto": true,
-	"editorconfig.showMenuEntry": true,
-	"editorconfig.template": "default",
+	"importCost.bundleSizeColoring": "compressed",
 	//<========>DOTENV CONFIG<========>
-	"dotenv.cloakColor": "#000000",
-	"dotenv.cloakIcon": "█",
+	"dotenv.cloakColor": "#C7910C",
+	"dotenv.cloakIcon": "▒",
 	"dotenv.enableAutocloaking": true,
-	"dotenv.enableSecretpeeking": true,
 	//<========>BACKGROUND<========>
-	"background.backgroundBlur": [
-		"0",
-		"2px",
-		"0",
-		"0"
-	],
 	"background.backgroundOpacity": [
 		0.1,
-		0.16,
+		0.1,
 		0.1,
 		0.1
 	],
 	"background.editorBackgrounds": [
-		"C:/Visuals/VisualStudioCode/9921de42ede13832ff5b845c71db8b44.gif"
+		"https://i.pinimg.com/originals/80/3f/c0/803fc0653c3126dc38b31fd2b348f312.jpg"
 	],
-	"intelliphp.inlineSuggestionsEnabled": true,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	//<================>DEFAULT FORMATTER<================>
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 }
