@@ -1,17 +1,17 @@
 {
   /**
    * ! AUTHOR  : Murad Gazymagomedov (quantferox)
-   * ? VERSION : 1.0.1 (Release)
-   * * DATE    : 29.06.2026
+   * ? VERSION : 1.0.2 (Release)
+   * * DATE    : 30.06.2026
    **/
-  //<================>ACCESSIBILITY
+  //<================>ACCESSIBILITY<================>
   "accessibility.signals.terminalBell": { "sound": "off" },
-  //<================>BREADCRUMBS
+  //<================>BREADCRUMBS<================>
   "breadcrumbs.enabled": false,
-  //<================>CHAT
+  //<================>CHAT<================>
   "chat.agent.enabled": false,
   "chat.disableAIFeatures": true,
-  //<================>EDITOR
+  //<================>EDITOR<================>
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.codeLensFontFamily": "Fira Code",
@@ -22,7 +22,7 @@
   "editor.dropIntoEditor.enabled": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.formatOnSave": true,
   "editor.glyphMargin": false,
@@ -39,38 +39,40 @@
   "editor.rulers": [
     { "column": 80, "color": "#00FF0032" },
     { "column": 100, "color": "#FFA50064" },
-    { "column": 120, "color": "#FF000096" },
+    { "column": 120, "color": "#FF000096" }
   ],
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "visible",
-  "editor.scrollbar.verticalScrollbarSize": 12,
-  "editor.scrollbar.horizontalScrollbarSize": 12,
-  "editor.showFoldingControls": "always",
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.showFoldingControls": "mouseover",
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
   "editor.suggest.localityBonus": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
   "editor.tokenColorCustomizations": {
-    "textMateRules": [],
+    "textMateRules": []
   },
-  //<================>EXPLORER
+  //<================>EXPLORER<================>
   "explorer.compactFolders": false,
-  //<================>FILES
+  //<================>FILES<================>
   "files.associations": {
     "*.embeddedhtml": "html",
     ".env*": "dotenv",
-    "*.ts": "typescript",
+    "*.ts": "typescript"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  //<================>GIT
+  //<================>GIT<================>
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
-  //<================>TERMINAL
+  //<================>TERMINAL<================>
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
@@ -83,18 +85,19 @@
   "terminal.integrated.shellIntegration.history": 1024,
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.shellIntegration.timeout": -1,
-  //<================>UPDATE
+  //<================>UPDATE<================>
   "update.showReleaseNotes": false,
-  //<================>WINDOWS
+  //<================>WINDOWS<================>
   "window.commandCenter": false,
   "window.autoDetectHighContrast": false,
   "window.confirmBeforeClose": "keyboardOnly",
   "window.density.editorTabHeight": "compact",
   "window.openFoldersInNewWindow": "on",
+  "window.openFilesInNewWindow": "on",
   "window.openWithoutArgumentsInNewWindow": "off",
   "window.systemColorTheme": "auto",
   "window.zoomLevel": 0,
-  //<================>WORKBENCH
+  //<================>WORKBENCH<================>
   "workbench.activityBar.compact": true,
   "workbench.activityBar.location": "top",
   "workbench.browser.openLocalhostLinks": false,
@@ -123,42 +126,43 @@
   "workbench.view.alwaysShowHeaderActions": true,
   "workbench.welcomePage.experimentalOnboarding": false,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  //<================>LANGUAGES
-  //<========>HTML
+  //<================>LANGUAGES<================>
+  //<========>HTML<========>
   "html.format.indentHandlebars": true,
   "html.format.templating": true,
   "html.format.wrapLineLength": 0,
-  //<========>CSS
+  "html.format.indentInnerHtml": true,
+  //<========>CSS<========>
   "css.format.spaceAroundSelectorSeparator": true,
   "css.lint.duplicateProperties": "warning",
   "css.lint.unknownAtRules": "ignore",
   "css.lint.unknownProperties": "warning",
   "css.lint.zeroUnits": "warning",
-  //<========>SCSS
+  //<========>SCSS<========>
   "scss.format.spaceAroundSelectorSeparator": true,
   "scss.lint.duplicateProperties": "warning",
   "scss.lint.unknownAtRules": "ignore",
   "scss.lint.unknownProperties": "warning",
   "scss.lint.zeroUnits": "warning",
-  //<========>LESS
+  //<========>LESS<========>
   "less.format.spaceAroundSelectorSeparator": true,
   "less.lint.duplicateProperties": "warning",
   "less.lint.unknownAtRules": "ignore",
   "less.lint.unknownProperties": "warning",
   "less.lint.zeroUnits": "warning",
-  //<========>JS/TS
+  //<========>JS/TS<========>
   "js/ts.preferences.quoteStyle": "double",
   "js/ts.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
   "js/ts.format.semicolons": "insert",
   "js/ts.autoClosingTags.enabled": true,
   "js/ts.hover.maximumLength": 1500,
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  //<========>PHP
+  //<========>PHP<========>
   "php.inlayHints.parameters.enabled": false,
   "php.inlayHints.types.return": false,
   "php.problems.exclude": { "/": [416], "vendor/": true },
   "[php]": { "editor.defaultFormatter": "DEVSENSE.phptools-vscode" },
-  //<========>PYTHON
+  //<========>PYTHON<========>
   "python.experiments.enabled": false,
   "python.terminal.activateEnvironment": false,
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
@@ -168,19 +172,19 @@
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.userFileIndexingLimit": 10000,
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-  //<========>BLACK-FORMATTER
+  //<========>BLACK-FORMATTER<========>
   "black-formatter.args": [],
-  //<================>EXTENSIONS
-  //<========>KUBERNETES
+  //<================>EXTENSIONS<================>
+  //<========>KUBERNETES<========>
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path-windows": "C:\\Users\\QuantFerox\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-    "vscode-kubernetes.minikube-path-windows": "C:\\Users\\QuantFerox\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
+    "vscode-kubernetes.minikube-path-windows": "C:\\Users\\QuantFerox\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
   },
-  //<========>IMPORT COST
+  //<========>IMPORT COST<========>
   "importCost.bundleSizeColoring": "compressed",
-  //<========>REDHAT
+  //<========>REDHAT<========>
   "redhat.telemetry.enabled": false,
-  //<========>PRETTIER
+  //<========>PRETTIER<========>
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
@@ -213,23 +217,23 @@
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": false,
   "prettier.withNodeModules": false,
-  //<========>INDENT RAINBOW
+  //<========>INDENT RAINBOW<========>
   "indentRainbow.colors": [
     "rgba(46,204,113,0.08)",
     "rgba(52,152,219,0.08)",
     "rgba(155,89,182,0.08)",
-    "rgba(241,196,15,0.08)",
+    "rgba(241,196,15,0.08)"
   ],
   "indentRainbow.errorColor": "rgba(231,76,60,0.64)",
   "indentRainbow.tabmixColor": "rgba(231,76,60,0.64)",
-  //<========>DOTENV
+  //<========>DOTENV<========>
   "dotenv.cloakColor": "#C7910C",
   "dotenv.cloakIcon": "▒",
   "dotenv.enableAutocloaking": false,
-  //<========>BACKGROUND
+  //<========>BACKGROUND<========>
   "background.backgroundOpacity": [0.1, 0.1, 0.1, 0.1],
   "background.backgroundBlur": ["0", "2px", "0", "0"],
   "background.editorBackgrounds": [
-    "C:\\Visuals\\VisualStudioCode\\9921de42ede13832ff5b845c71db8b44.gif",
-  ],
+    "C:\\Visuals\\VisualStudioCode\\9921de42ede13832ff5b845c71db8b44.gif"
+  ]
 }
